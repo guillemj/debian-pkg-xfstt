@@ -6,6 +6,8 @@ xfstt (1.6-2) UNRELEASED; urgency=low
   * Unify init.d script output with xfs, by lowercasing "font server".
   * Use "License:" instead of the missplaced "Copyright:" in debian/copyright.
   * Now using Standards-Version 3.6.1 (no changes needed).
+  * Build-Depends on the new splitted xlibs-static-dev package instead of
+    xlibs-dev.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 12 Mar 2004 13:07:46 +0100
 

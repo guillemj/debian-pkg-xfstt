@@ -2,7 +2,7 @@ Source: xfstt
 Section: x11
 Priority: extra
 Maintainer: Guillem Jover <guillem@debian.org>
-Build-Depends: debhelper (>= 4.1.16), xlibs-dev
+Build-Depends: debhelper (>= 4.1.16), xlibs-static-dev
 Standards-Version: 3.6.1
 
 Package: xfstt
