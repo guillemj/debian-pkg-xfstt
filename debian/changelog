@@ -4,6 +4,7 @@ xfstt (1.6-2) UNRELEASED; urgency=low
     - Added Danish by Claus Hindsgaul.
   * Little changed to package description.
   * Unify init.d script output with xfs, by lowercasing "font server".
+  * Use "License:" instead of the missplaced "Copyright:" in debian/copyright.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 12 Mar 2004 13:07:46 +0100
 
