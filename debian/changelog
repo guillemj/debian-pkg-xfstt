@@ -4,6 +4,8 @@ xfstt (1.6-3) UNRELEASED; urgency=low
     - Added Japanese. (Closes: #260922)
       Thanks to Hideki Yamane <henrich@samba.gr.jp>.
   * Added the location of the Subversion repo used for the packages.
+  * Do not use stamp files for build an install targets.
+  * Remove the configure stamp file on clean.
   * Cosmetic fixes on debian/copyright.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 30 Aug 2004 21:17:15 +0200

@@ -42,33 +42,32 @@ configure-stamp:
 		--mandir=\$${prefix}/share/man
 	touch configure-stamp
 
-build: build-stamp
-build-stamp: configure-stamp debian/po/templates.pot
+build: configure-stamp debian/po/templates.pot
 	dh_testdir
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
-	touch build-stamp
 
 clean:
 	dh_testdir
 	dh_testroot
-	rm -f build-stamp install-stamp
+	rm -f configure-stamp
+	
 	-$(MAKE) clean
 	-test -r /usr/share/misc/config.sub && \
 	  cp -f /usr/share/misc/config.sub config/config.sub
 	-test -r /usr/share/misc/config.guess && \
 	  cp -f /usr/share/misc/config.guess config/config.guess
+	
 	dh_clean
 
-install: install-stamp
-install-stamp: build-stamp
+install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
+	
 	# Temporal hack to give test.sh exec perms (Linda clean)
 	chmod a+x $(CURDIR)/doc/examples/test.sh
 	-$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
-	touch install-stamp
 
 # Build architecture-independent files here.
 binary-indep: build install
