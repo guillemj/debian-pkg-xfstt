@@ -18,7 +18,7 @@ Template: xfstt/listen_tcp
 Type: boolean
 Default: false
 _Description: Do you want xfstt to listen on a TCP port?
- Xfstt runs as superuser, but only before a connection is stablished with
+ Xfstt runs as superuser, but only before a connection is established with
  the client, then it drops superuser privileges and is run as user nobody.
  .
  This approach is fairly secure, but if you are not going to provide fonts

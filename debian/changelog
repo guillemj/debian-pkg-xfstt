@@ -1,3 +1,21 @@
+xfstt (1.4-2) unstable; urgency=low
+
+  * Removed build-depends on po-debconf as debhelper >= 4.1.13 depends on it.
+  * Little package description cleanup.
+  * lintian/linda clean:
+    - Removed "(" and ")" from "Upstream Author(s)" in debian/copyright file.
+    - Explicitly depend on debconf 1.2.9, daemons need it.
+    - Give examples/test.sh exec perms.
+  * Added a debian/watch file.
+  * Updated template translations:
+    - Added French template translation.
+    - Fixed typo in debian/templates.
+    Thanks Philippe Batailler <philippe.batailler@free.fr> (Closes: #172784).
+  * Synced Catalan and Spanish template translations.
+  * G++ 3.2 transition.
+
+ -- Guillem Jover <guillem.jover@menta.net>  Tue, 14 Jan 2003 13:30:20 +0100
+
 xfstt (1.4-1) unstable; urgency=low
 
   * New Upstream Source.
@@ -16,6 +34,7 @@ xfstt (1.4-1) unstable; urgency=low
   * Updated DEB_BUILD_OPTIONS behaviour as per policy 11.1.
   * Moved files to FHS compliant locations as per policy 12.8.7.
   * Now using Standards-Version 3.5.8.
+  * Sponsored by Amaya Rodrigo Sastre <amaya@debian.org>.
 
  -- Guillem Jover <guillem.jover@menta.net>  Tue, 19 Nov 2002 23:02:57 +0100
 
