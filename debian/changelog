@@ -1,3 +1,10 @@
+xfstt (1.6-1) unstable; urgency=low
+
+  * New Upstream Source.
+    - Fixed --sync only looking at fontdir subdirectories (Closes: #204141).
+
+ -- Guillem Jover <guillem@debian.org>  Thu,  7 Aug 2003 10:03:34 +0200
+
 xfstt (1.5.1-1) unstable; urgency=high
 
   * New Upstream Source.
