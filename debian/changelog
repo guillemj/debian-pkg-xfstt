@@ -8,6 +8,7 @@ xfstt (1.6-2) UNRELEASED; urgency=low
   * Now using Standards-Version 3.6.1 (no changes needed).
   * Build-Depends on the new splitted xlibs-static-dev package instead of
     xlibs-dev.
+  * Clean maintainer scripts output and code redundancy.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 12 Mar 2004 13:07:46 +0100
 
