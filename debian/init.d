@@ -41,7 +41,7 @@ case "$1" in
     start)
 	echo -n "Starting $DESC: xfstt"
 	start-stop-daemon --start --quiet --pidfile $PIDFILE \
-		--exec $XFSTT -- $ARGS
+		--exec $XFSTT -- $ARGS || echo -n " start failed"
 	echo "."
     ;;
 

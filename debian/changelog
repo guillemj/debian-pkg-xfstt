@@ -3,7 +3,10 @@ xfstt (1.6-2) unstable; urgency=low
   * Templates:
     - Added Danish by Claus Hindsgaul.
   * Little changes to package description.
-  * Unify init.d script output with xfs, by lowercasing "font server".
+  * debian/init.d:
+    - Unify script output with xfs, by lowercasing "font server".
+    - Do proper error handling when start fails.
+      Thanks to Stephan Seidl <seidl@zhr.tu-dresden.de>.
   * Use "License:" instead of the missplaced "Copyright:" in debian/copyright.
   * Build-Depends on the new fine-grained xlibs-static-dev package instead of
     the old xlibs-dev.
