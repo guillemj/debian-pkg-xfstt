@@ -1,0 +1,74 @@
+# translation of da.po to Danish
+# translation of xfstt to Danish
+# Claus Hindsgaul <claus_h@image.dk>, 2004.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: da\n"
+"POT-Creation-Date: 2003-01-06 04:35+0100\n"
+"PO-Revision-Date: 2004-02-10 20:08+0100\n"
+"Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#. Description
+#: ../templates:3
+msgid "Fonts not provided by this package"
+msgstr "Skrifttyper, der ikke følger med denne pakke"
+
+#. Description
+#: ../templates:3
+msgid ""
+"It appears you have installed fonts in /var/ttfonts from a previous version "
+"of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
+"truetype. Please place any truetype fonts in that location."
+msgstr ""
+"Det lader til at du har installeret skrifttyper i /var/ttfonts fra en "
+"tidligere version af xfstt. Dette er blevet ændret, og xfstt benytter nu "
+"/usr/share/fonts/truetype. Placér derfor alle truetype-skrifttyper der."
+
+#. Description
+#: ../templates:11
+msgid "Server port changed to 7101"
+msgstr "Server-port ændret til 7101"
+
+#. Description
+#: ../templates:11
+msgid ""
+"Due to a conflict with xfs (X Font Server), in version 0.99.10 the default "
+"port was changed. If you have X11 still configured to use port 7100 for "
+"xfstt, please modify your configuration to reflect this change. See xfstt(1) "
+"manual page."
+msgstr ""
+"Grundet en konflikt med xfs (X skrifttype-server), blev standardporten i version "
+"0.99.10 ændret. Hvis du stadig har sat X11 op til at benytte port 7100 til xfstt, "
+"bedes du ændre opsætningen, så dette ændres. Se i øvrigt manualsiden xfstt(1)."
+
+#. Description
+#: ../templates:20
+msgid "Do you want xfstt to listen on a TCP port?"
+msgstr "Ønsker du at xfstt skal lytte på en TCP-port?"
+
+#. Description
+#: ../templates:20
+msgid ""
+"Xfstt runs as superuser, but only before a connection is established with "
+"the client, then it drops superuser privileges and is run as user nobody."
+msgstr ""
+"Xfstt kører som superbruger, men kun indtil en forbindelse med en klient er "
+"etableret. Da opgiver den superbruger-privilegierne og kører som brugeren "
+"nobody."
+
+#. Description
+#: ../templates:20
+msgid ""
+"This approach is fairly secure, but if you are not going to provide fonts to "
+"remote hosts, it is recommended to not listen to network connections."
+msgstr ""
+"Denne fremgangsmåde er rimelig sikker, men hvis du alligevel ikke skal tilbyde "
+"skrifttyper til fremmede maskiner, anbefales det ikke at lytte efter netforbindelser."
+
