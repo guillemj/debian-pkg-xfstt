@@ -3,7 +3,9 @@ set -e
 
 . /usr/share/debconf/confmodule
 
-# New installation ? then no need to show notice, also in next upgrades
+#
+# New installation ? then no need to show notice, also not in next upgrades
+#
 if [ -z "$2" ]; then
 	db_fset xfstt/default_port_changed seen true
 else

@@ -5,10 +5,11 @@
 # Gergely Egervary <mauzi@lin.lkg.c3.hu>
 # and Guillem Jover <guillem.jover@menta.net>
 #
-# Thu,  1 Aug 2002 00:26:47 +0200
+# 2002-11-19 15:43:07+0100
 
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
-XFSTT=/usr/X11R6/bin/xfstt
+XFSTT=/usr/bin/xfstt
+DESC="X TrueType Font Server"
 PIDFILE=/var/run/xfstt.pid
 CONFIGFILE=/etc/default/xfstt
 
@@ -31,27 +32,28 @@ if [ "$LISTEN_TCP" = no ]; then
 	ARGS="$ARGS --notcp"
 fi
 
+set -e
+
 case "$1" in
     start)
-
-	    echo -n "Starting X TrueType Font Server: xfstt"
-	    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $XFSTT -- $ARGS
-	    echo "."
-
+	echo -n "Starting $DESC: xfstt"
+	start-stop-daemon --start --quiet --pidfile $PIDFILE \
+		--exec $XFSTT -- $ARGS
+	echo "."
     ;;
 
     stop)
-	    echo -n "Stopping X TrueType Font Server: xfstt"
-	    start-stop-daemon --stop --quiet --pidfile $PIDFILE --exec $XFSTT ||  echo -n " not running"
-	    echo "."
-
+	echo -n "Stopping $DESC: xfstt"
+	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
+		--exec $XFSTT ||  echo -n " not running"
+	echo "."
     ;;
 
     force-reload|restart)
-	    echo -n "Reloading X True Type Font Server configuration..."
-	    $0 stop
-	    $XFSTT --sync
-	    $0 start
+	echo "Reloading $DESC configuration..."
+	$0 stop
+	$XFSTT --sync
+	$0 start
     ;;
 
     *)
@@ -61,3 +63,4 @@ case "$1" in
 esac
 
 exit 0
+

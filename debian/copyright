@@ -1,8 +1,5 @@
-Xfstt is Copyright (c) 1997, 1998, 1999 Herber Duerr and (possibly others)
-
-Xfstt is licenced under the GNU Library General Public Licence.
-Full text of this licence on Debian systems can be found in
-/usr/share/common-licenses/LGPL on your Debian system.
+This package was debianized by Christoph Lameter <clameter@waterf.org> on
+Mon, 27 Oct 1997 19:20:48 -0800
 
 Xfstt has been maintained by Stephen Carpenter <sjc@debian.org> both
 for Debian and Upstream also. Then the package has been mainatined by
@@ -10,4 +7,31 @@ Amaya Rodrigo <amaya@debian.org>.
 
 Currently maintained by Guillem Jover <guillem.jover@menta.net> both
 for Debian and Upstream.
+
+It was downloaded from <http://download.berlios.de/xfstt/>
+
+Upstream Author(s):
+
+   Copyright (C) 1997, 1998, 1999 Herber Duerr and (possibly others)
+   Copyright (C) 1999 Stephen Cartpenter
+   Copyright (C) 2002 Guillem Jover
+
+Copyright:
+
+    This package is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this package; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
+
+On Debian GNU/Linux systems, the complete text of the GNU Lesser General
+Public License can be found in `/usr/share/common-licenses/LGPL'.
 

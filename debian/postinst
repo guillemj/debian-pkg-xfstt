@@ -21,7 +21,7 @@ if [ "$1" = configure ]; then
 			< $CONFIGFILE > $CONFIGFILE.tmp
 		mv -f $CONFIGFILE.tmp $CONFIGFILE
 	else
-		echo "# Config file for xfstt" > $CONFIGFILE
+		echo "# Defaults for xfstt init.d script" > $CONFIGFILE
 		echo "#" >> $CONFIGFILE
 		echo "# Valid values are: yes no" >> $CONFIGFILE
 		echo "LISTEN_TCP=\"$RET\"" >> $CONFIGFILE

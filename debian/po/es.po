@@ -1,0 +1,79 @@
+# Spanish Translation for X TrueType Font Server
+# Copyright (C) 1997-1999 Herbert Duerr
+# portions are (C) 1999 Stephen Carpenter and others
+# portions are (C) 2002 Guillem Jover
+# This file is distributed under the same license as the xfstt package.
+# Guillem Jover <guillem.jover@menta.net>, 2002.
+#
+#    Translators, please read /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfstt 1.4\n"
+"POT-Creation-Date: 2002-10-10 22:12+0200\n"
+"PO-Revision-Date: 2002-10-10 22:13+0200\n"
+"Last-Translator: Guillem Jover <guillem.jover@menta.net>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Description
+#: ../templates:3
+msgid "Fonts not provided by this package"
+msgstr "Las fuentes no son provistas por este paquete"
+
+#. Description
+#: ../templates:3
+msgid ""
+"It appears you have installed fonts in /var/ttfonts from a previous version "
+"of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
+"truetype. Please place any truetype fonts in that location."
+msgstr ""
+"Parece que tiene fuentes instaladas en /var/ttfonts de una versión anterior "
+"de xfstt. Esto ha cambiado y xfstt ahora usa /usr/share/fonts/truetype. Por "
+"favor ponga cualquier fuente truetype en este directorio."
+
+#. Description
+#: ../templates:11
+msgid "Server port changed to 7101"
+msgstr "El puerto del servidor se ha cambiado al 7101"
+
+#. Description
+#: ../templates:11
+msgid ""
+"Due to a conflict with xfs (X Font Server), in version 0.99.10 the default "
+"port was changed. If you have X11 still configured to use port 7100 for "
+"xfstt, please modify your configuration to reflect this change. See xfstt(1) "
+"manual page."
+msgstr ""
+"A causa de un conflicto con xfs (X Font Server), en la versión 0.99.10 el "
+"puerto predeterminado ha cambiado. Si aún tiene X11 configurado para usar el "
+"puerto 7100 con xfstt, por favor modifique su configuración para reflejar "
+"este cambio. Vea la pagina de manual xfstt(1)."
+
+#. Description
+#: ../templates:20
+msgid "Do you want xfstt to listen on a TCP port?"
+msgstr "¿Quiere que xfstt escuche en un puerto TCP?"
+
+#. Description
+#: ../templates:20
+msgid ""
+"Xfstt runs as superuser, but only before a connection is stablished with the "
+"client, then it drops superuser privileges and is run as user nobody."
+msgstr ""
+"Xfstt funciona como superusuario, pero solo antes de establecer una conexión "
+"con un cliente, después deja los privilegios de superusuario y funciona como "
+"usuario 'nobody'."
+
+#. Description
+#: ../templates:20
+msgid ""
+"This approach is fairly secure, but if you are not going to provide fonts to "
+"remote hosts, it is recommended to not listen to network connections."
+msgstr ""
+"Esta aproximación es bastante segura, pero si no va a suministrar fuentes a "
+"anfitriones remotos, se recomienda no escuchar en conexiones de red. "

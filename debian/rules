@@ -7,17 +7,37 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-CXXFLAGS = -Wall -O2
+CXXFLAGS = -Wall -g
+LDFLAGS =
 
-ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
-CXXFLAGS += -g -DDEBUG
-LDFLAGS += -g
+export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+
+# For autoconf 2.52 and newer only
+ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
+  confflags += --build $(DEB_HOST_GNU_TYPE)
 else
-CXXFLAGS += -fomit-frame-pointer -ffast-math
+  confflags += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
 endif
 
+ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
+	CXXFLAGS += -DDEBUG
+endif
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	CXXFLAGS += -O0
+else
+	CXXFLAGS += -O2 -fomit-frame-pointer -ffast-math
+endif
+
+configure: configure-stamp
+configure-stamp:
+	dh_testdir
+	./configure $(confflags) --prefix=/usr --mandir=/usr/share/man
+	touch configure-stamp
+
 build: build-stamp
-build-stamp:
+build-stamp: configure-stamp
 	dh_testdir
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 	touch build-stamp
@@ -27,6 +47,10 @@ clean:
 	dh_testroot
 	rm -f build-stamp install-stamp
 	-$(MAKE) clean
+	-test -r /usr/share/misc/config.sub && \
+	  cp -f /usr/share/misc/config.sub config/config.sub
+	-test -r /usr/share/misc/config.guess && \
+	  cp -f /usr/share/misc/config.guess config/config.guess
 	dh_clean
 
 install: install-stamp
@@ -51,7 +75,6 @@ binary-arch: build install
 	dh_installexamples
 	dh_installinit
 	dh_installman
-#	dh_undocmuented
 	dh_installchangelogs CHANGES
 	dh_link
 	dh_strip

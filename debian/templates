@@ -1,28 +1,25 @@
 Template: xfstt/fonts_not_provided
 Type: note
-Description: Fonts not provided by this package
- It appears you have installed fonts in /var/ttfonts
- from a previous version of xfstt. This has been changed and
- xfstt now uses /usr/share/fonts/truetype. Please place any
- truetype fonts in that location.
+_Description: Fonts not provided by this package
+ It appears you have installed fonts in /var/ttfonts from a previous
+ version of xfstt. This has been changed and xfstt now uses
+ /usr/share/fonts/truetype. Please place any truetype fonts in that
+ location.
 
 Template: xfstt/default_port_changed
 Type: note
-Description: Server port changed to 7101
- Due to a conflict with xfs (X Font Server), in version 0.99.10
- the default port was changed. If you have X11 still configured
- to use port 7100 for xfstt, please modify your configuration
- to reflect this change. See xfstt(1) manual page.
+_Description: Server port changed to 7101
+ Due to a conflict with xfs (X Font Server), in version 0.99.10 the default
+ port was changed. If you have X11 still configured to use port 7100 for
+ xfstt, please modify your configuration to reflect this change. See
+ xfstt(1) manual page.
 
 Template: xfstt/listen_tcp
 Type: boolean
 Default: false
-Description: Do you want xfstt to listen on a TCP port?
- Xfstt runs as superuser, but only before a connection is
- stablished with the client, then it drops superuser privileges
- and is run as user nobody.
+_Description: Do you want xfstt to listen on a TCP port?
+ Xfstt runs as superuser, but only before a connection is stablished with
+ the client, then it drops superuser privileges and is run as user nobody.
  .
- This approach is fairly secure, but if you are not going
- to provide fonts to other hosts, it is recommended to not
- listen on network connections.
-
+ This approach is fairly secure, but if you are not going to provide fonts
+ to remote hosts, it is recommended to not listen to network connections.
