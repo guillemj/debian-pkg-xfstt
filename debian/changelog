@@ -9,6 +9,7 @@ xfstt (1.6-2) UNRELEASED; urgency=low
   * Build-Depends on the new splitted xlibs-static-dev package instead of
     xlibs-dev.
   * Clean maintainer scripts output and code redundancy.
+  * Lowercase Debian usage in debian/README.debian.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 12 Mar 2004 13:07:46 +0100
 
