@@ -1,3 +1,12 @@
+xfstt (1.5.1-1) unstable; urgency=high
+
+  * New Upstream Source.
+    - Fixed a possible security problem by checking the byteorder magic in
+      the connection handshake:
+      bugtraq id 8255
+
+ -- Guillem Jover <guillem@debian.org>  Thu, 31 Jul 2003 08:46:54 +0200
+
 xfstt (1.5-1) unstable; urgency=high
 
   * New Upstream Source.
