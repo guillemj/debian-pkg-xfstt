@@ -1,3 +1,16 @@
+xfstt (1.5-1) unstable; urgency=high
+
+  * New Upstream Source.
+    - Modified debian/rules to accommodate the new configure options.
+    - Fixed multiple buffer overflows in the network packet handling:
+      CAN-2003-0581.
+  * Update templates.pot automatically.
+  * Updated debian/copyright file with new copyright year.
+  * Do not give to the daemon redundant default arguments in the init.d script.
+  * Now using Standards-Version 3.6.0.
+
+ -- Guillem Jover <guillem@debian.org>  Tue, 29 Jul 2003 21:48:10 +0200
+
 xfstt (1.4-3) unstable; urgency=low
 
   * Corrected the watch file.

@@ -30,14 +30,20 @@ else
 	CXXFLAGS += -O2 -fomit-frame-pointer -ffast-math
 endif
 
+debian/po/templates.pot: debian/templates
+	@debconf-updatepo
+
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	./configure $(confflags) --prefix=/usr --mandir=\$${prefix}/share/man
+	./configure $(confflags) \
+		--prefix=/usr \
+		--localstatedir=/var \
+		--mandir=\$${prefix}/share/man
 	touch configure-stamp
 
 build: build-stamp
-build-stamp: configure-stamp
+build-stamp: configure-stamp debian/po/templates.pot
 	dh_testdir
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 	touch build-stamp

@@ -13,12 +13,15 @@ DESC="X TrueType Font Server"
 PIDFILE=/var/run/xfstt.pid
 CONFIGFILE=/etc/default/xfstt
 
-# Change this to change the default port
+# To change the default port and/or user modify and uncomment
 portno=7101
 newuser=nobody
+#portarg="--port $portno"
+#userarg="--user $newuser"
+
 daemon="--daemon"
 
-ARGS="--port $portno $daemon --user $newuser"
+ARGS="$daemon $portarg $userarg"
 
 test -x "$XFSTT" || exit 0
 
