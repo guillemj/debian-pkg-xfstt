@@ -15,7 +15,7 @@ fi
 
 if [ -e /etc/default/xfstt ]; then
 	. /etc/default/xfstt || true
-	
+
 	case "$LISTEN_TCP" in
 	yes)	db_set xfstt/listen_tcp true
 		;;
@@ -24,7 +24,7 @@ if [ -e /etc/default/xfstt ]; then
 	esac
 fi
 
-db_input medium xfstt/listen_tcp || true
+db_input low xfstt/listen_tcp || true
 db_go || true
 
 if [ -e "/var/ttfonts" ]; then

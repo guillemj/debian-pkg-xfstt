@@ -10,6 +10,7 @@ xfstt (1.6-2) unstable; urgency=low
   * Clean maintainer scripts output and code redundancy.
   * Lowercase Debian usage in debian/README.debian.
   * Remove obsolete source and diff targets from debian/rules.
+  * Changed Debconf xfstt/listen_tcp priority to low.
   * Now using Standards-Version 3.6.1 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Sun, 30 May 2004 11:45:36 +0200
