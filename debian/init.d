@@ -9,7 +9,7 @@
 
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 XFSTT=/usr/bin/xfstt
-DESC="X TrueType Font Server"
+DESC="X TrueType font server"
 PIDFILE=/var/run/xfstt.pid
 CONFIGFILE=/etc/default/xfstt
 
