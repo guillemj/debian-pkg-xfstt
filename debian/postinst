@@ -1,22 +1,36 @@
 #!/bin/sh
-
 set -e
 
-# This script will finish the setup of xfstt after it is
-# installed. 
+. /usr/share/debconf/confmodule
+
+CONFIGFILE=/etc/default/xfstt
+
+if [ "$1" = configure ]; then
+	db_get xfstt/listen_tcp || true
+
+	case "$RET" in
+	true)	RET=yes
+		;;
+	false)	RET=no
+		;;
+	esac
+	
+
+	if [ -e $CONFIGFILE ]; then
+		sed -e "s/^ *LISTEN_TCP=.*/LISTEN_TCP=\"$RET\"/" \
+			< $CONFIGFILE > $CONFIGFILE.tmp
+		mv -f $CONFIGFILE.tmp $CONFIGFILE
+	else
+		echo "# Config file for xfstt" > $CONFIGFILE
+		echo "#" >> $CONFIGFILE
+		echo "# Valid values are: yes no" >> $CONFIGFILE
+		echo "LISTEN_TCP=\"$RET\"" >> $CONFIGFILE
+	fi
+fi
 
 #DEBHELPER#
 
-# check and see if /var/ttfonts exists - warn if it does else warn about
-# "this program does not install fonts"
+db_stop
 
-if [ -e "/var/ttfonts" ]; then
-	echo "NOTICE: It appears you have installed fonts in 
-/var/ttfonts from a previous version of xfstt. This has been changed and
-xfstt now uses /usr/share/fonts/truetype. Please place any truetype fonts
-in that location\n" 
-	echo "Please Hit enter to continue"
-	read junk
-fi
+exit 0
 
-	

@@ -1,13 +1,17 @@
 #!/bin/sh
-# Automatically added by dh_installinit
-if [ "$1" = "purge" ] ; then
-	update-rc.d xfstt remove >/dev/null
-	rm -rf /var/cache/xfstt/
+set -e
+
+if [ "$1" = purge -a -d /var/cache/xfstt ]; then
+	echo "Removing xfstt cache files."
+	rm -rf /var/cache/xfstt 2>/dev/null || true
 fi
 
-if [ "$1" = "remove" ] ; then
-        rm -rf /var/cache/xfstt/
+if [ "$1" = purge -a -e /etc/default/xfstt ]; then
+	echo "Removing xfstt config files."
+	rm -f /etc/default/xfstt 2>/dev/null || true
 fi
 
-# End automatically added section
 #DEBHELPER#
+
+exit 0
+

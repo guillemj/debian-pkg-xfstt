@@ -4,6 +4,10 @@ Xfstt is licenced under the GNU Library General Public Licence.
 Full text of this licence on Debian systems can be found in
 /usr/share/common-licenses/LGPL on your Debian system.
 
-Xfstt is currently maintained by Stephen Carpenter <sjc@debian.org>
-both for Debian and now Upstream also.
+Xfstt has been maintained by Stephen Carpenter <sjc@debian.org> both
+for Debian and Upstream also. Then the package has been mainatined by
+Amaya Rodrigo <amaya@debian.org>.
+
+Currently maintained by Guillem Jover <guillem.jover@menta.net> both
+for Debian and Upstream.
 

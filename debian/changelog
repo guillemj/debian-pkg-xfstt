@@ -1,3 +1,25 @@
+xfstt (1.3-1) unstable; urgency=low
+
+  * New Maintainer.
+  * New Upstream Source.
+    - Fixed unix socket and its dir permissions (Closes: #107046, #143621).
+    - Added support for --notcp (Closes: #117679).
+  * Added debconf support.
+    - Added a note about the port change (Closes: #29260).
+    - Converted postrm echo about /var/ttfont migration to a debconf note.
+  * debian/init.d: Added --pidfile to the start target (Closes: #144071).
+  * debain/control:
+    - Disabled dh_installcron and dh_installmenu.
+    - Switched from dh_installmanpage to dh_installman.
+  * Added debug DEB_BUILD_OPTIONS support.
+  * Removed debian/conffiles as it is handled by debhelper.
+  * Switched to debhelper compatibility level 4.
+  * Converted package to non-native again.
+  * Added upstream changelog and THANKS file.
+  * Updated README.Debian and copyright files.
+
+ -- Guillem Jover <guillem.jover@menta.net>  Fri,  2 Aug 2002 04:07:50 +0200
+
 xfstt (1.2.1-1) unstable; urgency=low
 
   * See if this closes it finally (Closes: #141452).

@@ -1,13 +1,13 @@
 Source: xfstt
 Section: x11
 Priority: extra
-Maintainer: Amaya Rodrigo Sastre <amaya@debian.org>
+Maintainer: Guillem Jover <guillem.jover@menta.net>
 Build-Depends: debhelper (>> 3.0.0), xlibs-dev
 Standards-Version: 3.5.6
 
 Package: xfstt
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: TrueType Font Server for X11
  xfstt means "X11 Font Server for TT fonts".
  TT fonts are generally regarded to be the best scalable fonts
