@@ -3,7 +3,7 @@
 # Start or stop xfstt
 # by Stephen Carpenter <sjc@debian.org>,
 # Gergely Egervary <mauzi@lin.lkg.c3.hu>
-# and Guillem Jover <guillem.jover@menta.net>
+# and Guillem Jover <guillem@debian.org>
 #
 # 2002-11-19 15:43:07+0100
 

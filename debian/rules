@@ -33,7 +33,7 @@ endif
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	./configure $(confflags) --prefix=/usr --mandir=/usr/share/man
+	./configure $(confflags) --prefix=/usr --mandir=\$${prefix}/share/man
 	touch configure-stamp
 
 build: build-stamp

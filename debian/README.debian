@@ -31,5 +31,5 @@ xfstt for DEBIAN
 * From now on xfstt will be configured by default not to listen to TCP
   connections, thus improving security.
 
-  -- Guillem Jover <guillem.jover@menta.net>  Thu,  1 Aug 2002 00:19:13 +0200
+  -- Guillem Jover <guillem@debian.org>  Thu,  1 Aug 2002 00:19:13 +0200
 

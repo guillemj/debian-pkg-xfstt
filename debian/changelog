@@ -1,3 +1,15 @@
+xfstt (1.4-3) unstable; urgency=low
+
+  * Corrected the watch file.
+  * Templates:
+    - Added Brazilian Portuguese (Closes: #179514).
+      Thanks to Andre Luis Lopes <andrelop@ig.com.br>.
+    - Added German: incomplete from the DDTP.
+  * Changed all instances of the mail address.
+  * Now using Standards-Version 3.5.9.
+
+ -- Guillem Jover <guillem@debian.org>  Mon, 17 Mar 2003 04:47:38 +0100
+
 xfstt (1.4-2) unstable; urgency=low
 
   * Removed build-depends on po-debconf as debhelper >= 4.1.13 depends on it.

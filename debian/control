@@ -1,7 +1,7 @@
 Source: xfstt
 Section: x11
 Priority: extra
-Maintainer: Guillem Jover <guillem.jover@menta.net>
+Maintainer: Guillem Jover <guillem@debian.org>
 Build-Depends: debhelper (>= 4.1.16), xlibs-dev
 Standards-Version: 3.5.8
 

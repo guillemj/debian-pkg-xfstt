@@ -1,16 +1,22 @@
-# Catalan Translation for X TrueType Font Server
-# Copyright (C) 1997-1999 Herbert Duerr
-# portions are (C) 1999 Stephen Carpenter and others
-# portions are (C) 2002 Guillem Jover
-# This file is distributed under the same license as the xfstt package.
-# Guillem Jover <guillem.jover@menta.net>, 2002.
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfstt 1.4-2\n"
+"Project-Id-Version: xfstt 1.4-3\n"
 "POT-Creation-Date: 2003-01-06 04:35+0100\n"
 "PO-Revision-Date: 2002-12-15 08:10+0200\n"
-"Last-Translator: Guillem Jover <guillem.jover@menta.net>\n"
+"Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
