@@ -1,4 +1,4 @@
-xfstt (1.6-3) UNRELEASED; urgency=low
+xfstt (1.6-3) unstable; urgency=low
 
   * Templates:
     - Added Japanese. (Closes: #260922)
@@ -8,7 +8,7 @@ xfstt (1.6-3) UNRELEASED; urgency=low
   * Remove the configure stamp file on clean.
   * Cosmetic fixes on debian/copyright.
 
- -- Guillem Jover <guillem@debian.org>  Mon, 30 Aug 2004 21:17:15 +0200
+ -- Guillem Jover <guillem@debian.org>  Sat, 25 Dec 2004 19:29:58 +0100
 
 xfstt (1.6-2) unstable; urgency=low
 
