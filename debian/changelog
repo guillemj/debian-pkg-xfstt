@@ -1,3 +1,11 @@
+xfstt (1.4-0woody1) stable; urgency=low
+
+  * Backport to woody.
+  * Downgraded debhelper versioned dependency.
+  * Merged templates to throw po-debconf dependency.
+
+ -- Guillem Jover <guillem@debian.org>  Mon, 14 Apr 2003 04:36:16 +0200
+
 xfstt (1.4-3) unstable; urgency=low
 
   * Corrected the watch file.

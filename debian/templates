@@ -1,25 +1,102 @@
 Template: xfstt/fonts_not_provided
 Type: note
-_Description: Fonts not provided by this package
+Description: Fonts not provided by this package
  It appears you have installed fonts in /var/ttfonts from a previous
  version of xfstt. This has been changed and xfstt now uses
  /usr/share/fonts/truetype. Please place any truetype fonts in that
  location.
+Description-ca.ISO-8859-15: Fonts no proveïdes per aquest paquet
+ Sembla que té fonts instal·lades a /var/ttfonts d'una versió anterior de
+ xfstt. Això ha canviat i ara xfstt fa servir /usr/share/fonts/truetype. Si
+ us plau posi qualsevol font truetype en aquest directori.
+Description-de.ISO-8859-15: Nicht von diesem Paket bereitgestellte Fonts
+ Es scheint, daß Sie in /var/ttfonts Fonts aus einer früheren Version von
+ xfstt installierten.  Diese haben sich verändert und xfstt benutzt jetzt
+ /usr/share/fonts/truetype.  Bitte legen Sie hier jegliche TrueType-Fonts
+ ab.
+Description-es.ISO-8859-15: Las fuentes no son provistas por este paquete
+ Parece que tiene fuentes instaladas en /var/ttfonts de una versión
+ anterior de xfstt. Esto ha cambiado y xfstt ahora usa
+ /usr/share/fonts/truetype. Por favor ponga cualquier fuente truetype en
+ este directorio.
+Description-fr.ISO-8859-15: Ce paquet ne fournit pas de police
+ Il semble qu'une précédente version de xfstt a installé des polices dans
+ /var/ttfonts. Ce répertoire n'est plus utilisé. Veuillez placer les
+ polices truetype dans le nouveau répertoire /usr/share/fonts/truetype.
+Description-pt_BR.ISO-8859-1: Fontes não são fornecidas por este pacote
+ Parece que você instalou fontes em /var/ttfonts de uma versão anterior do
+ xfstt. Isso foi mudado e o xfstt usa agora /usr/share/fonts/truetype. Por
+ favor coloque quaisque fontes truetype nesse diretório.
 
 Template: xfstt/default_port_changed
 Type: note
-_Description: Server port changed to 7101
+Description: Server port changed to 7101
  Due to a conflict with xfs (X Font Server), in version 0.99.10 the default
  port was changed. If you have X11 still configured to use port 7100 for
  xfstt, please modify your configuration to reflect this change. See
  xfstt(1) manual page.
+Description-ca.ISO-8859-15: El port del servidor ha canviat a 7101
+ A causa d'un conflicte amb xfs (X Font Server), en la versió 0.99.10 el
+ port predeterminat va canviar. Si encara té X11 configurat per fer servir
+ el port 7100 per a xfstt, si us plau modifiqui la configuració per
+ reflectir aquest canvi. Miri la pàgina de manual xfstt(1).
+Description-de.ISO-8859-15: Der Server-Port liegt lautet jetzt 7101
+ Wegen eines Konfliktes mit xfs (X Font Server) wurde die
+ Port-Voreinstellung ab Version 0.99.10 geändert.  Falls Sie X11 noch für
+ den Gebrauch von Port 7100 für xfstt konfiguriert haben, passen Sie bitte
+ Ihre Konfiguration entsprechend dieser Änderungen an.  Siehe auch die
+ man-page xfstt(1).
+Description-es.ISO-8859-15: El puerto del servidor se ha cambiado al 7101
+ A causa de un conflicto con xfs (X Font Server), en la versión 0.99.10 el
+ puerto predeterminado ha cambiado. Si aún tiene X11 configurado para usar
+ el puerto 7100 con xfstt, por favor modifique su configuración para
+ reflejar este cambio. Vea la pagina de manual xfstt(1).
+Description-fr.ISO-8859-15: Le port du serveur est maintenant 7101
+ À cause d'un conflit avec xfs (le serveur de polices pour X) dans sa
+ version 0.99.10, le port par défaut a changé. Si votre configuration de
+ X11 indique le port 7100, veuillez la modifier pour refléter ce
+ changement. Voyez la page de manuel de xfstt(1).
+Description-pt_BR.ISO-8859-1: Porta do servidor modificada para 7101
+ Devido a um conflito com o xfs (Servidor de Fontes do X) na versão 0.99.10
+ a porta padrão foi modificada. Caso você possua o x11 ainda configurado
+ para usar a porta 7100 para o xfstt, por favor modifique sua configuração
+ para refletir esta mudança. Consulte a página de manual do xfstt(1).
 
 Template: xfstt/listen_tcp
 Type: boolean
 Default: false
-_Description: Do you want xfstt to listen on a TCP port?
+Description: Do you want xfstt to listen on a TCP port?
  Xfstt runs as superuser, but only before a connection is established with
  the client, then it drops superuser privileges and is run as user nobody.
  .
  This approach is fairly secure, but if you are not going to provide fonts
  to remote hosts, it is recommended to not listen to network connections.
+Description-ca.ISO-8859-15: Vol que xfstt escolti en un port TCP?
+ Xfstt funciona com a superusuari, però només abans d'establir la connexió
+ amb el client, llavors deixa els privilegis de superusuari i funciona com
+ a usuari 'nobody'.
+ .
+ Aquesta aproximació és força segura, però si no ha de subministrar fonts a
+ un amfitrió remot, és recomanable no escoltar en connexions de xarxa.
+Description-es.ISO-8859-15: ¿Quiere que xfstt escuche en un puerto TCP?
+ Xfstt funciona como superusuario, pero solo antes de establecer una
+ conexión con un cliente, después deja los privilegios de superusuario y
+ funciona como usuario 'nobody'.
+ .
+ Esta aproximación es bastante segura, pero si no va a suministrar fuentes
+ a anfitriones remotos, se recomienda no escuchar en conexiones de red.
+Description-fr.ISO-8859-15: Voulez-vous que xfstt écoute un port TCP ?
+ Xfstt fonctionne avec les droits du super-utilisateur, mais seulement
+ avant qu'une connexion ne soit établie avec le client ; il abandonne
+ ensuite ces droits et fonctionne en tant qu'utilisateur nobody.
+ .
+ Cette manière de faire est relativement sûre ; mais si vous ne voulez pas
+ offrir de polices à des sites distants, il est recommandé de ne pas
+ permettre ces connexions par le réseau.
+Description-pt_BR.ISO-8859-1: Você deseja que o xfstt escute em uma porta TCP ?
+ O xfstt é executado como superusuário somente antes que uma conexão seja
+ estabelecida com o cliente e então abandona os privilégios de superusuário
+ e é executado como o usuário nobody.
+ .
+ Este método é seguro o bastante, mas caso você não precise servir fontes
+ para hosts remotos é recomendado não ouvir conexões de rede.
