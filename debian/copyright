@@ -12,7 +12,7 @@ It was downloaded from <http://download.berlios.de/xfstt/>
 
 The debian packages are maintained through Subversion on:
 
-   <http://svn.debian.org/viewcvs/pkg-xfstt/>
+   <svn://svn.debian.org/pkg-xfstt/>
 
 Upstream Authors:
 
