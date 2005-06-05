@@ -42,7 +42,7 @@ configure-stamp:
 		--mandir=\$${prefix}/share/man
 	touch configure-stamp
 
-build: configure-stamp debian/po/templates.pot
+build: configure debian/po/templates.pot
 	dh_testdir
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 

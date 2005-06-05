@@ -4,6 +4,7 @@ xfstt (1.6-4) UNRELEASED; urgency=low
     - Added Czech. (Closes: #290542)
       Thanks to Miroslav Kure <kurem@upcase.inf.upol.cz>.
   * Fix Subversion repository URL.
+  * Call configure instead of configure-stamp in the build target.
 
  -- Guillem Jover <guillem@debian.org>  Sun,  5 Jun 2005 04:13:38 +0300
 
