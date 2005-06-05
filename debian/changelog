@@ -1,3 +1,11 @@
+xfstt (1.6-4) UNRELEASED; urgency=low
+
+  * Templates:
+    - Added Czech. (Closes: #290542)
+      Thanks to Miroslav Kure <kurem@upcase.inf.upol.cz>.
+
+ -- Guillem Jover <guillem@debian.org>  Sun,  5 Jun 2005 04:13:38 +0300
+
 xfstt (1.6-3) unstable; urgency=low
 
   * Templates:
