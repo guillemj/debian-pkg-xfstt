@@ -1,4 +1,4 @@
-xfstt (1.6-4) UNRELEASED; urgency=low
+xfstt (1.6-4) unstable; urgency=low
 
   * Templates:
     - Added Czech. (Closes: #290542)
@@ -8,8 +8,9 @@ xfstt (1.6-4) UNRELEASED; urgency=low
   * Call configure instead of configure-stamp in the build target.
   * Update watch file version to 3 (no changes needed).
   * Now using Standards-Version 3.6.2 (no changes needed).
+  * C++ ABI transition.
 
- -- Guillem Jover <guillem@debian.org>  Sun,  5 Jun 2005 04:13:38 +0300
+ -- Guillem Jover <guillem@debian.org>  Thu,  7 Jul 2005 03:18:59 +0300
 
 xfstt (1.6-3) unstable; urgency=low
 
