@@ -8,7 +8,9 @@ Amaya Rodrigo <amaya@debian.org>.
 Currently maintained by Guillem Jover <guillem@debian.org> both
 for Debian and Upstream.
 
-It was downloaded from <http://download.berlios.de/xfstt/>
+The upstream source was downloaded from:
+
+   <http://download.berlios.de/xfstt/>
 
 The debian packages are maintained through Subversion on:
 
