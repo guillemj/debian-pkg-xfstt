@@ -1,12 +1,12 @@
 #!/bin/sh
 set -e
 
-if [ "$1" = purge -a -d /var/cache/xfstt ]; then
+if [ "$1" = purge ] && [ -d /var/cache/xfstt ]; then
 	echo " Removing xfstt cache files."
 	rm -rf /var/cache/xfstt 2>/dev/null || true
 fi
 
-if [ "$1" = purge -a -e /etc/default/xfstt ]; then
+if [ "$1" = purge ] && [ -e /etc/default/xfstt ]; then
 	echo " Removing xfstt config files."
 	rm -f /etc/default/xfstt 2>/dev/null || true
 fi
