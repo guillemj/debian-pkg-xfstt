@@ -1,3 +1,10 @@
+xfstt (1.6-5) UNRELEASED; urgency=low
+
+  * Use misc:Depends instead of an explicit dependency to debconf (>= 1.2.9)
+    to get the alternative debconf-2.0 as well.
+
+ -- Guillem Jover <guillem@debian.org>  Fri,  5 Aug 2005 04:33:32 +0300
+
 xfstt (1.6-4) unstable; urgency=low
 
   * Templates:

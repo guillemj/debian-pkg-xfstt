@@ -7,7 +7,7 @@ Standards-Version: 3.6.2
 
 Package: xfstt
 Architecture: any
-Depends: ${shlibs:Depends}, debconf (>= 1.2.9)
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: X Font Server for TrueType fonts
  TrueType fonts are generally regarded to be the best scalable fonts
  for displays. Applications needing scalable fonts that are to be
