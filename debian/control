@@ -15,5 +15,5 @@ Description: X Font Server for TrueType fonts
  This server will allow X11 applications to use the exact same fonts
  as the TrueType fonts used on Windows operating systems.
  .
- NB: This package contains NO FONTS. They MUST be obtained separately.
+ Note: This package does not contain fonts. They must be obtained separately.
 
