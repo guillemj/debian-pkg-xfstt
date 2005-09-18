@@ -4,6 +4,7 @@ xfstt (1.6-6) UNRELEASED; urgency=low
     - Added Vietnamese. (Closes: #324262)
       Thanks to Clytie Siddall <clytie@riverland.net.au>.
   * Update FSF's address.
+  * Use LSB init script output functions, thus Depend on lsb-base.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 10 Sep 2005 04:22:23 +0300
 

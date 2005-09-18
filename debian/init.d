@@ -37,32 +37,33 @@ if [ "$LISTEN_TCP" = no ]; then
 	ARGS="$ARGS --notcp"
 fi
 
-set -e
+. /lib/lsb/init-functions
 
 case "$1" in
     start)
-	echo -n "Starting $DESC: xfstt"
+	log_daemon_msg "Starting $DESC" "xfstt"
 	start-stop-daemon --start --quiet --pidfile $PIDFILE \
-		--exec $XFSTT -- $ARGS || echo -n " start failed"
-	echo "."
+		--exec $XFSTT -- $ARGS
+	log_end_msg $?
     ;;
 
     stop)
-	echo -n "Stopping $DESC: xfstt"
+	log_daemon_msg "Stopping $DESC" "xfstt"
 	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
-		--exec $XFSTT ||  echo -n " not running"
-	echo "."
+		--exec $XFSTT
+	log_end_msg $?
     ;;
 
     force-reload|restart)
-	echo "Reloading $DESC configuration..."
 	$0 stop
-	$XFSTT --sync
+	log_action_begin_msg "Reloading $DESC configuration"
+	$XFSTT --sync >/dev/null
+	log_action_end_msg $?
 	$0 start
     ;;
 
     *)
-	echo "Usage: /etc/init.d/xfstt {start|stop|force-reload|restart}" >&2
+	echo "Usage: /etc/init.d/xfstt {start|stop|force-reload|restart}"
 	exit 1
     ;;
 esac
