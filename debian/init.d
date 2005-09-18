@@ -1,11 +1,13 @@
 #!/bin/sh
 #
-# Start or stop xfstt
-# by Stephen Carpenter <sjc@debian.org>,
-# Gergely Egervary <mauzi@lin.lkg.c3.hu>
-# and Guillem Jover <guillem@debian.org>
+# xfstt sysv init script
 #
-# 2002-11-19 15:43:07+0100
+# Stephen Carpenter <sjc@debian.org>,
+# Gergely Egervary <mauzi@lin.lkg.c3.hu> and
+# Guillem Jover <guillem@debian.org>.
+#
+# $Id$
+#
 
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 XFSTT=/usr/bin/xfstt
