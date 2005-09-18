@@ -2,6 +2,7 @@
 #
 # xfstt sysv init script
 #
+# Written by
 # Stephen Carpenter <sjc@debian.org>,
 # Gergely Egervary <mauzi@lin.lkg.c3.hu> and
 # Guillem Jover <guillem@debian.org>.
@@ -69,4 +70,6 @@ case "$1" in
 esac
 
 exit 0
+
+# vim: syn=sh:
 
