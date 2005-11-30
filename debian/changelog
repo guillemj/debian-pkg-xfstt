@@ -9,6 +9,7 @@ xfstt (1.7-1) unstable; urgency=low
   * Upgrade to debhelper compat version 5.
   * Reindent debian/copyright and change the reference to Debian, system
     neutral.
+  * Reindent debian/rules and make it stop using stamp files.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 30 Nov 2005 01:45:25 +0200
 

@@ -33,17 +33,17 @@ endif
 debian/po/templates.pot: debian/templates
 	@debconf-updatepo
 
-configure: configure-stamp
-configure-stamp:
+config.status: configure
 	dh_testdir
+	
 	./configure $(confflags) \
 		--prefix=/usr \
 		--localstatedir=/var \
 		--mandir=\$${prefix}/share/man
-	touch configure-stamp
 
-build: configure debian/po/templates.pot
+build: config.status debian/po/templates.pot
 	dh_testdir
+
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 
 clean:
@@ -52,6 +52,7 @@ clean:
 	rm -f configure-stamp
 	
 	-$(MAKE) clean
+	
 	-test -r /usr/share/misc/config.sub && \
 	  cp -f /usr/share/misc/config.sub config/config.sub
 	-test -r /usr/share/misc/config.guess && \
@@ -69,11 +70,9 @@ install: build
 	chmod a+x $(CURDIR)/doc/examples/test.sh
 	-$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
 
-# Build architecture-independent files here.
 binary-indep: build install
-# Nothing to do.
+	# Nothing to do.
 
-# Build architecture-dependent files here.
 binary-arch: build install
 	dh_testdir
 	dh_testroot
@@ -94,5 +93,6 @@ binary-arch: build install
 	dh_builddeb
 
 binary: binary-indep binary-arch
+
 .PHONY: build clean binary-indep binary-arch binary
 
