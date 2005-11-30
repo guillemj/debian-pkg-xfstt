@@ -7,6 +7,8 @@ xfstt (1.7-1) unstable; urgency=low
     Thanks to Daniel Nylander <yeager@lidkoping.net>.
     - Run debconf-updatepo.
   * Upgrade to debhelper compat version 5.
+  * Reindent debian/copyright and change the reference to Debian, system
+    neutral.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 30 Nov 2005 01:45:25 +0200
 
