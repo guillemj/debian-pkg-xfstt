@@ -6,6 +6,7 @@ xfstt (1.7-1) unstable; urgency=low
     - Added Swedish. (Closes: #330989)
     Thanks to Daniel Nylander <yeager@lidkoping.net>.
     - Run debconf-updatepo.
+  * Upgrade to debhelper compat version 5.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 30 Nov 2005 01:45:25 +0200
 
