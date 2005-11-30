@@ -5,6 +5,7 @@ xfstt (1.7-1) unstable; urgency=low
   * Templates:
     - Added Swedish. (Closes: #330989)
     Thanks to Daniel Nylander <yeager@lidkoping.net>.
+    - Run debconf-updatepo.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 30 Nov 2005 01:45:25 +0200
 

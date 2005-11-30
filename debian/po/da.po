@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
-"POT-Creation-Date: 2003-01-06 04:35+0100\n"
+"Report-Msgid-Bugs-To: guillem@debian.org\n"
+"POT-Creation-Date: 2005-11-30 01:49+0200\n"
 "PO-Revision-Date: 2004-04-08 23:55+0200\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -15,11 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
+#. Type: note
 #. Description
 #: ../templates:3
 msgid "Fonts not provided by this package"
 msgstr "Skrifttyper, der ikke følger med denne pakke"
 
+#. Type: note
 #. Description
 #: ../templates:3
 msgid ""
@@ -28,14 +31,16 @@ msgid ""
 "truetype. Please place any truetype fonts in that location."
 msgstr ""
 "Det lader til at du har installeret skrifttyper i /var/ttfonts fra en "
-"tidligere version af xfstt. Dette er blevet ændret, og xfstt benytter nu "
-"/usr/share/fonts/truetype. Placér derfor alle truetype-skrifttyper der."
+"tidligere version af xfstt. Dette er blevet ændret, og xfstt benytter nu /"
+"usr/share/fonts/truetype. Placér derfor alle truetype-skrifttyper der."
 
+#. Type: note
 #. Description
 #: ../templates:11
 msgid "Server port changed to 7101"
 msgstr "Server-port ændret til 7101"
 
+#. Type: note
 #. Description
 #: ../templates:11
 msgid ""
@@ -44,15 +49,18 @@ msgid ""
 "xfstt, please modify your configuration to reflect this change. See xfstt(1) "
 "manual page."
 msgstr ""
-"Grundet en konflikt med xfs (X skrifttype-server), blev standardporten i version "
-"0.99.10 ændret. Hvis du stadig har sat X11 op til at benytte port 7100 til xfstt, "
-"bedes du ændre opsætningen, så dette ændres. Se i øvrigt manualsiden xfstt(1)."
+"Grundet en konflikt med xfs (X skrifttype-server), blev standardporten i "
+"version 0.99.10 ændret. Hvis du stadig har sat X11 op til at benytte port "
+"7100 til xfstt, bedes du ændre opsætningen, så dette ændres. Se i øvrigt "
+"manualsiden xfstt(1)."
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "Ønsker du at xfstt skal lytte på en TCP-port?"
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid ""
@@ -63,12 +71,13 @@ msgstr ""
 "etableret. Da opgiver den superbruger-privilegierne og kører som brugeren "
 "nobody."
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
-"Denne fremgangsmåde er rimelig sikker, men hvis du alligevel ikke skal tilbyde "
-"skrifttyper til fremmede maskiner, anbefales det ikke at lytte efter netforbindelser."
-
+"Denne fremgangsmåde er rimelig sikker, men hvis du alligevel ikke skal "
+"tilbyde skrifttyper til fremmede maskiner, anbefales det ikke at lytte efter "
+"netforbindelser."

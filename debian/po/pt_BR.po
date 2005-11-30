@@ -14,7 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfstt 1.4-2\n"
-"POT-Creation-Date: 2003-01-06 04:35+0100\n"
+"Report-Msgid-Bugs-To: guillem@debian.org\n"
+"POT-Creation-Date: 2005-11-30 01:49+0200\n"
 "PO-Revision-Date: 2003-02-02 19:00-0200\n"
 "Last-Translator: André Luís Lopes <andrelop@ig.com.br>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
@@ -22,11 +23,13 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. Type: note
 #. Description
 #: ../templates:3
 msgid "Fonts not provided by this package"
 msgstr "Fontes não são fornecidas por este pacote"
 
+#. Type: note
 #. Description
 #: ../templates:3
 msgid ""
@@ -34,16 +37,17 @@ msgid ""
 "of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
 "truetype. Please place any truetype fonts in that location."
 msgstr ""
-"Parece que você instalou fontes em /var/ttfonts de uma versão anterior "
-"do xfstt. Isso foi mudado e o xfstt usa agora "
-"/usr/share/fonts/truetype. Por favor coloque quaisque fontes truetype "
-"nesse diretório."
+"Parece que você instalou fontes em /var/ttfonts de uma versão anterior do "
+"xfstt. Isso foi mudado e o xfstt usa agora /usr/share/fonts/truetype. Por "
+"favor coloque quaisque fontes truetype nesse diretório."
 
+#. Type: note
 #. Description
 #: ../templates:11
 msgid "Server port changed to 7101"
 msgstr "Porta do servidor modificada para 7101"
 
+#. Type: note
 #. Description
 #: ../templates:11
 msgid ""
@@ -52,32 +56,34 @@ msgid ""
 "xfstt, please modify your configuration to reflect this change. See xfstt(1) "
 "manual page."
 msgstr ""
-"Devido a um conflito com o xfs (Servidor de Fontes do X) na versão "
-"0.99.10 a porta padrão foi modificada. Caso você possua o x11 ainda "
-"configurado para usar a porta 7100 para o xfstt, por favor modifique "
-"sua configuração para refletir esta mudança. Consulte a página de "
-"manual do xfstt(1)."
+"Devido a um conflito com o xfs (Servidor de Fontes do X) na versão 0.99.10 a "
+"porta padrão foi modificada. Caso você possua o x11 ainda configurado para "
+"usar a porta 7100 para o xfstt, por favor modifique sua configuração para "
+"refletir esta mudança. Consulte a página de manual do xfstt(1)."
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "Você deseja que o xfstt escute em uma porta TCP ?"
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
 msgstr ""
-"O xfstt é executado como superusuário somente antes que uma conexão "
-"seja estabelecida com o cliente e então abandona os privilégios de "
-"superusuário e é executado como o usuário nobody."
+"O xfstt é executado como superusuário somente antes que uma conexão seja "
+"estabelecida com o cliente e então abandona os privilégios de superusuário e "
+"é executado como o usuário nobody."
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
-"Este método é seguro o bastante, mas caso você não precise servir "
-"fontes para hosts remotos é recomendado não ouvir conexões de rede."
+"Este método é seguro o bastante, mas caso você não precise servir fontes "
+"para hosts remotos é recomendado não ouvir conexões de rede."

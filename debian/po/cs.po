@@ -14,7 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfstt\n"
-"POT-Creation-Date: 2003-01-06 04:35+0100\n"
+"Report-Msgid-Bugs-To: guillem@debian.org\n"
+"POT-Creation-Date: 2005-11-30 01:49+0200\n"
 "PO-Revision-Date: 2005-01-11 20:17+0100\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
@@ -22,11 +23,13 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. Type: note
 #. Description
 #: ../templates:3
 msgid "Fonts not provided by this package"
 msgstr "Tento balík nenabízí písma"
 
+#. Type: note
 #. Description
 #: ../templates:3
 msgid ""
@@ -38,11 +41,13 @@ msgstr ""
 "To se nyní zmìnilo a xfstt pou¾ívá písma z /usr/share/fonts/truetype. "
 "Pøesuòte prosím v¹echna truetypová písma do nového umístìní."
 
+#. Type: note
 #. Description
 #: ../templates:11
 msgid "Server port changed to 7101"
 msgstr "Serverový port se zmìnil na 7101"
 
+#. Type: note
 #. Description
 #: ../templates:11
 msgid ""
@@ -55,20 +60,23 @@ msgstr ""
 "port na 7101. Pokud je systém X11 stále nastaven, aby pro xfstt pou¾íval "
 "port 7100, zmìòte nastavení X11. Viz manálová stránka xfstt(1)."
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "Chcete, aby xfstt poslouchal na TCP portu?"
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
 msgstr ""
-"Xfstt normálnì bì¾í pod úètem superu¾ivatele. Tìsnì pøed navázáním spojení "
-"s klientem zahodí svá superu¾ivatelská práva a pokraèuje jako u¾ivatel nobody."
+"Xfstt normálnì bì¾í pod úètem superu¾ivatele. Tìsnì pøed navázáním spojení s "
+"klientem zahodí svá superu¾ivatelská práva a pokraèuje jako u¾ivatel nobody."
 
+#. Type: boolean
 #. Description
 #: ../templates:20
 msgid ""
