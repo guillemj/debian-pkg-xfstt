@@ -4,14 +4,13 @@ xfstt (1.7-1) unstable; urgency=low
     - Added IPv6 support.
   * Templates:
     - Added Swedish. (Closes: #330989)
-    Thanks to Daniel Nylander <yeager@lidkoping.net>.
+      Thanks to Daniel Nylander <yeager@lidkoping.net>.
     - Run debconf-updatepo.
   * Upgrade to debhelper compat version 5.
-  * Reindent debian/copyright and change the reference to Debian, system
-    neutral.
+  * Reindent debian/copyright and make the reference to Debian system neutral.
   * Reindent debian/rules and make it stop using stamp files.
 
- -- Guillem Jover <guillem@debian.org>  Wed, 30 Nov 2005 01:45:25 +0200
+ -- Guillem Jover <guillem@debian.org>  Wed, 30 Nov 2005 03:59:58 +0200
 
 xfstt (1.6-6) unstable; urgency=low
 
