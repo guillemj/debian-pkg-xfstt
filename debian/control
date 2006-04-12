@@ -2,7 +2,7 @@ Source: xfstt
 Section: x11
 Priority: extra
 Maintainer: Guillem Jover <guillem@debian.org>
-Build-Depends: debhelper (>= 5), libfs-dev
+Build-Depends: debhelper (>= 5), x11proto-fonts-dev
 Standards-Version: 3.6.2
 
 Package: xfstt
