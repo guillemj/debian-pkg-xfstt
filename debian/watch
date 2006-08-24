@@ -1,3 +1,4 @@
 # Site			Directory	Pattern			Version	Script
 version=3
-http://download.berlios.de/xfstt	xfstt-(.*)\.tar\.gz	debian	uupdate
+#http://download.berlios.de/xfstt	xfstt-(.*)\.tar\.gz	debian	uupdate
+http://developer.berlios.de/project/showfiles.php?group_id=475	http://prdownload.berlios.de/xfstt/xfstt-([\d\.-]*)\.tar\.gz	debian	uupdate
