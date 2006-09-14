@@ -346,7 +346,7 @@ xfstt (0.9.10-3) frozen; urgency=low
 
 xfstt (0.9.10-2) frozen; urgency=low
 
-  * init.d script failed with new xbase (BUG# 29442) 
+  * init.d script failed with new xbase (BUG# 29442)
     * /etc/X11/config no longer exists
     * init.d script no longer uses this
     * Docs updated to reflect change
@@ -371,7 +371,7 @@ xfstt (0.9.9-8) unstable; urgency=low
 xfstt (0.9.9-7) unstable; urgency=low
 
   * changed last references to port 7100 (BUG#26023)
-  * Fixed xfstt not deleteing PID file under certain circumstances 
+  * Fixed xfstt not deleteing PID file under certain circumstances
   *       - This fixes part of bug #26021
   * init.d script works like xfs script (thanx Gergely Egervary)
   * init.d script now uses start-stop-daemon (also Bug#26021)
@@ -383,9 +383,9 @@ xfstt (0.9.9-6) unstable; urgency=low
 
   * init.d script fix (again) Should be the last one (BUG#25326)
   *        Changed "True Type" to TrueType
-  *        Fixed test to see if xfstt already running 
+  *        Fixed test to see if xfstt already running
   * Tiny bit of code cleanup. The build is down to 2 compiler warnings.
-  * Changed instances of 7100 in man page to 7101 
+  * Changed instances of 7100 in man page to 7101
 
  -- Stephen J. Carpenter <sjc@debian.org>  Fri,  7 Aug 1998 22:20:06 -0400
 
@@ -406,7 +406,7 @@ xfstt (0.9.9-3) unstable; urgency=low
   * New Patch from Upstream Author to fix iso8859-8 (Hebrew) encoding
   * init.d script is now a conffile (Bug# 24237)
   * init.d script now has "force-reload|restart" and no reload (Bug# 24237)
-  * default port # is 7101 and init.d script added PORT variable 
+  * default port # is 7101 and init.d script added PORT variable
   * init.d script tests to see if xfstt is already running
 
  -- Stephen J. Carpenter <sjc@debian.org>  Sun,  29 Jul 1998 20:55:23 -0400
