@@ -1,13 +1,23 @@
 #!/bin/sh
 #
-# xfstt sysv init script
+# $Id$
+#
+### BEGIN INIT INFO
+# Provides:          xfs xfstt
+# Required-Start:    $local_fs $network
+# Required-Stop:     $local_fs $network
+# Should-Start:
+# Should-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: xfstt sysv init script
+# Description:       xfstt is a TrueType font server for X
+### END INIT INFO
 #
 # Written by
 # Stephen Carpenter <sjc@debian.org>,
 # Gergely Egervary <mauzi@lin.lkg.c3.hu> and
 # Guillem Jover <guillem@debian.org>.
-#
-# $Id$
 #
 
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
