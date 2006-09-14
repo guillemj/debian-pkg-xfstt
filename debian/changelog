@@ -3,6 +3,9 @@ xfstt (1.7-2) UNRELEASED; urgency=low
   * Replace libfs-dev Build-Dependency with x11proto-fonts-dev.
   * Fix debian/warch file, now that Berlios does not provide a browsable
     direct download site.
+  * Templates:
+    - Added Portuguese. (Closes: #362834)
+      Thanks to André Costa <skit@argon.ath.cx>.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 12 Apr 2006 03:53:38 +0300
 
