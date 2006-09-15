@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfstt\n"
 "Report-Msgid-Bugs-To: guillem@debian.org\n"
-"POT-Creation-Date: 2005-11-30 01:49+0200\n"
+"POT-Creation-Date: 2006-09-15 02:57+0300\n"
 "PO-Revision-Date: 2005-01-11 20:17+0100\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <provoz@debian.cz>\n"
@@ -23,52 +23,15 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Type: note
-#. Description
-#: ../templates:3
-msgid "Fonts not provided by this package"
-msgstr "Tento balík nenabízí písma"
-
-#. Type: note
-#. Description
-#: ../templates:3
-msgid ""
-"It appears you have installed fonts in /var/ttfonts from a previous version "
-"of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
-"truetype. Please place any truetype fonts in that location."
-msgstr ""
-"Zdá se, ¾e máte z pøedchozí verze xfstt nainstalována písma ve /var/ttfonts. "
-"To se nyní zmìnilo a xfstt pou¾ívá písma z /usr/share/fonts/truetype. "
-"Pøesuòte prosím v¹echna truetypová písma do nového umístìní."
-
-#. Type: note
-#. Description
-#: ../templates:11
-msgid "Server port changed to 7101"
-msgstr "Serverový port se zmìnil na 7101"
-
-#. Type: note
-#. Description
-#: ../templates:11
-msgid ""
-"Due to a conflict with xfs (X Font Server), in version 0.99.10 the default "
-"port was changed. If you have X11 still configured to use port 7100 for "
-"xfstt, please modify your configuration to reflect this change. See xfstt(1) "
-"manual page."
-msgstr ""
-"Kvùli konfliktu s xfs (X Font Server) se od verze 0.99.10 zmìnil výchozí "
-"port na 7101. Pokud je systém X11 stále nastaven, aby pro xfstt pou¾íval "
-"port 7100, zmìòte nastavení X11. Viz manálová stránka xfstt(1)."
-
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "Chcete, aby xfstt poslouchal na TCP portu?"
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
@@ -78,10 +41,35 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
 "Tento pøístup je pomìrnì bezpeèný, ov¹em pokud nebudete nabízet písma "
 "ostatním poèítaèùm, je zbyteèné, aby byl program zbùhdarma vystaven na síti."
+
+#~ msgid "Fonts not provided by this package"
+#~ msgstr "Tento balík nenabízí písma"
+
+#~ msgid ""
+#~ "It appears you have installed fonts in /var/ttfonts from a previous "
+#~ "version of xfstt. This has been changed and xfstt now uses /usr/share/"
+#~ "fonts/truetype. Please place any truetype fonts in that location."
+#~ msgstr ""
+#~ "Zdá se, ¾e máte z pøedchozí verze xfstt nainstalována písma ve /var/"
+#~ "ttfonts. To se nyní zmìnilo a xfstt pou¾ívá písma z /usr/share/fonts/"
+#~ "truetype. Pøesuòte prosím v¹echna truetypová písma do nového umístìní."
+
+#~ msgid "Server port changed to 7101"
+#~ msgstr "Serverový port se zmìnil na 7101"
+
+#~ msgid ""
+#~ "Due to a conflict with xfs (X Font Server), in version 0.99.10 the "
+#~ "default port was changed. If you have X11 still configured to use port "
+#~ "7100 for xfstt, please modify your configuration to reflect this change. "
+#~ "See xfstt(1) manual page."
+#~ msgstr ""
+#~ "Kvùli konfliktu s xfs (X Font Server) se od verze 0.99.10 zmìnil výchozí "
+#~ "port na 7101. Pokud je systém X11 stále nastaven, aby pro xfstt pou¾íval "
+#~ "port 7100, zmìòte nastavení X11. Viz manálová stránka xfstt(1)."

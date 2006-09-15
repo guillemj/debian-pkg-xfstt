@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfstt 1.6-5\n"
 "Report-Msgid-Bugs-To: guillem@debian.org\n"
-"POT-Creation-Date: 2005-11-30 01:49+0200\n"
+"POT-Creation-Date: 2006-09-15 02:57+0300\n"
 "PO-Revision-Date: 2005-08-21 20:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -16,54 +16,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: LocFactoryEditor 1.2.2\n"
 
-#. Type: note
-#. Description
-#: ../templates:3
-msgid "Fonts not provided by this package"
-msgstr "Gói này không cung cấp phông chữ."
-
-#. Type: note
-#. Description
-#: ../templates:3
-msgid ""
-"It appears you have installed fonts in /var/ttfonts from a previous version "
-"of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
-"truetype. Please place any truetype fonts in that location."
-msgstr ""
-"Hình như bạn đã cài đặt một số phông chữ trong </var/ttfonts> từ một phiên "
-"bản xfstt trước. Địa điểm phông chữ đã thay đổi: xfstt lúc bây giở có dùng </"
-"usr/share/fonts/truetype>. Vì vậy, bạn hãy để các phông chữ TrueType vào địa "
-"điểm này."
-
-#. Type: note
-#. Description
-#: ../templates:11
-msgid "Server port changed to 7101"
-msgstr "Cổng trình phục vụ đã thay đổi thành 7101."
-
-#. Type: note
-#. Description
-#: ../templates:11
-msgid ""
-"Due to a conflict with xfs (X Font Server), in version 0.99.10 the default "
-"port was changed. If you have X11 still configured to use port 7100 for "
-"xfstt, please modify your configuration to reflect this change. See xfstt(1) "
-"manual page."
-msgstr ""
-"Vì xung đột với xfs (X Font Server: trình phục vụ phông chữ X), phiên bản "
-"0.99.10 đã thay đổi cổng mặc định. Nếu bạn vẫn còn có cấu hình đặt X11 dùng "
-"cổng 7100 cho xfstt, bạn hãy sửa đổi cấu hình để phản ánh sự thay đổi này. "
-"Hãy xem trang hướng dẫn (man) « xfstt(1)  » để tìm chi tiết."
-
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "Bạn có muốn trình xfstt lắng nghe trên cổng TCP không?"
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
@@ -74,10 +35,37 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
 "Phương pháp này hơi bảo mật, nhưng nếu bạn sẽ không cung cấp phông chữ cho "
 "máy ở xa thì đệ nghị trình này không lắng nghe kết nối mạng."
+
+#~ msgid "Fonts not provided by this package"
+#~ msgstr "Gói này không cung cấp phông chữ."
+
+#~ msgid ""
+#~ "It appears you have installed fonts in /var/ttfonts from a previous "
+#~ "version of xfstt. This has been changed and xfstt now uses /usr/share/"
+#~ "fonts/truetype. Please place any truetype fonts in that location."
+#~ msgstr ""
+#~ "Hình như bạn đã cài đặt một số phông chữ trong </var/ttfonts> từ một "
+#~ "phiên bản xfstt trước. Địa điểm phông chữ đã thay đổi: xfstt lúc bây giở "
+#~ "có dùng </usr/share/fonts/truetype>. Vì vậy, bạn hãy để các phông chữ "
+#~ "TrueType vào địa điểm này."
+
+#~ msgid "Server port changed to 7101"
+#~ msgstr "Cổng trình phục vụ đã thay đổi thành 7101."
+
+#~ msgid ""
+#~ "Due to a conflict with xfs (X Font Server), in version 0.99.10 the "
+#~ "default port was changed. If you have X11 still configured to use port "
+#~ "7100 for xfstt, please modify your configuration to reflect this change. "
+#~ "See xfstt(1) manual page."
+#~ msgstr ""
+#~ "Vì xung đột với xfs (X Font Server: trình phục vụ phông chữ X), phiên bản "
+#~ "0.99.10 đã thay đổi cổng mặc định. Nếu bạn vẫn còn có cấu hình đặt X11 "
+#~ "dùng cổng 7100 cho xfstt, bạn hãy sửa đổi cấu hình để phản ánh sự thay "
+#~ "đổi này. Hãy xem trang hướng dẫn (man) « xfstt(1)  » để tìm chi tiết."

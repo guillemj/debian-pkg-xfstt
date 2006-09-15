@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: guillem@debian.org\n"
-"POT-Creation-Date: 2005-11-30 01:49+0200\n"
+"POT-Creation-Date: 2006-09-15 02:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Debian Description Translation Project <debconf@ddtp.debian."
 "org>\n"
@@ -16,61 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#  Template: xfstt/fonts_not_provided
-#  ddtp-prioritize: 51
-#
-#. Type: note
-#. Description
-#: ../templates:3
-msgid "Fonts not provided by this package"
-msgstr "Nicht von diesem Paket bereitgestellte Fonts"
-
-#
-#. Type: note
-#. Description
-#: ../templates:3
-msgid ""
-"It appears you have installed fonts in /var/ttfonts from a previous version "
-"of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
-"truetype. Please place any truetype fonts in that location."
-msgstr ""
-"Es scheint, daß Sie in /var/ttfonts Fonts aus einer früheren Version von "
-"xfstt installierten.  Diese haben sich verändert und xfstt benutzt jetzt /"
-"usr/share/fonts/truetype.  Bitte legen Sie hier jegliche TrueType-Fonts ab."
-
-#  Template: xfstt/default_port_changed
-#  ddtp-prioritize: 51
-#
-#. Type: note
-#. Description
-#: ../templates:11
-msgid "Server port changed to 7101"
-msgstr "Der Server-Port liegt lautet jetzt 7101"
-
-#
-#. Type: note
-#. Description
-#: ../templates:11
-msgid ""
-"Due to a conflict with xfs (X Font Server), in version 0.99.10 the default "
-"port was changed. If you have X11 still configured to use port 7100 for "
-"xfstt, please modify your configuration to reflect this change. See xfstt(1) "
-"manual page."
-msgstr ""
-"Wegen eines Konfliktes mit xfs (X Font Server) wurde die Port-Voreinstellung "
-"ab Version 0.99.10 geändert.  Falls Sie X11 noch für den Gebrauch von Port "
-"7100 für xfstt konfiguriert haben, passen Sie bitte Ihre Konfiguration "
-"entsprechend dieser Änderungen an.  Siehe auch die man-page xfstt(1)."
-
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
@@ -78,8 +32,44 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
+
+#  Template: xfstt/fonts_not_provided
+#  ddtp-prioritize: 51
+#
+#~ msgid "Fonts not provided by this package"
+#~ msgstr "Nicht von diesem Paket bereitgestellte Fonts"
+
+#
+#~ msgid ""
+#~ "It appears you have installed fonts in /var/ttfonts from a previous "
+#~ "version of xfstt. This has been changed and xfstt now uses /usr/share/"
+#~ "fonts/truetype. Please place any truetype fonts in that location."
+#~ msgstr ""
+#~ "Es scheint, daß Sie in /var/ttfonts Fonts aus einer früheren Version von "
+#~ "xfstt installierten.  Diese haben sich verändert und xfstt benutzt jetzt /"
+#~ "usr/share/fonts/truetype.  Bitte legen Sie hier jegliche TrueType-Fonts "
+#~ "ab."
+
+#  Template: xfstt/default_port_changed
+#  ddtp-prioritize: 51
+#
+#~ msgid "Server port changed to 7101"
+#~ msgstr "Der Server-Port liegt lautet jetzt 7101"
+
+#
+#~ msgid ""
+#~ "Due to a conflict with xfs (X Font Server), in version 0.99.10 the "
+#~ "default port was changed. If you have X11 still configured to use port "
+#~ "7100 for xfstt, please modify your configuration to reflect this change. "
+#~ "See xfstt(1) manual page."
+#~ msgstr ""
+#~ "Wegen eines Konfliktes mit xfs (X Font Server) wurde die Port-"
+#~ "Voreinstellung ab Version 0.99.10 geändert.  Falls Sie X11 noch für den "
+#~ "Gebrauch von Port 7100 für xfstt konfiguriert haben, passen Sie bitte "
+#~ "Ihre Konfiguration entsprechend dieser Änderungen an.  Siehe auch die man-"
+#~ "page xfstt(1)."

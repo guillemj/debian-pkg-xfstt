@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfstt 1.6-2\n"
 "Report-Msgid-Bugs-To: guillem@debian.org\n"
-"POT-Creation-Date: 2005-11-30 01:49+0200\n"
+"POT-Creation-Date: 2006-09-15 02:57+0300\n"
 "PO-Revision-Date: 2004-07-11 00:28+0900\n"
 "Last-Translator: Hideki Yamane <henrich@samba.gr.jp>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
@@ -24,54 +24,15 @@ msgstr ""
 "Content-Type: text/plain; charset=EUC-JP\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Type: note
-#. Description
-#: ../templates:3
-msgid "Fonts not provided by this package"
-msgstr "このパッケージではフォントは提供されません"
-
-#. Type: note
-#. Description
-#: ../templates:3
-msgid ""
-"It appears you have installed fonts in /var/ttfonts from a previous version "
-"of xfstt. This has been changed and xfstt now uses /usr/share/fonts/"
-"truetype. Please place any truetype fonts in that location."
-msgstr ""
-"xfstt の以前のバージョンによって、/var/ttfonts にフォントがインストールされて"
-"いるようです。これは変更されており、xfstt は /usr/share/fonts/truetype を使う"
-"ようになっています。どの truetype フォントもこの位置に置くようにしてくださ"
-"い。"
-
-#. Type: note
-#. Description
-#: ../templates:11
-msgid "Server port changed to 7101"
-msgstr "サーバのポート番号は 7101 に変更されました"
-
-#. Type: note
-#. Description
-#: ../templates:11
-msgid ""
-"Due to a conflict with xfs (X Font Server), in version 0.99.10 the default "
-"port was changed. If you have X11 still configured to use port 7100 for "
-"xfstt, please modify your configuration to reflect this change. See xfstt(1) "
-"manual page."
-msgstr ""
-"xfs (X Font Server) とぶつかるので、バージョン 0.99.10 で標準のポートが変更さ"
-"れました。X11 がいまだに xfstt のためにポート 7100 を使うように設定されていた"
-"場合、この変更を反映するように設定ファイルを修正してください。xfstt(1) man "
-"ページを参照してください。"
-
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "xfstt を TCP ポートで listen させますか?"
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
@@ -82,10 +43,37 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates:20
+#: ../templates:1001
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
 "このやり方はとてもセキュアですが、リモートホストにフォントを提供しないのであ"
 "れば、ネットワーク接続を listen しないようにするのをお勧めします。"
+
+#~ msgid "Fonts not provided by this package"
+#~ msgstr "このパッケージではフォントは提供されません"
+
+#~ msgid ""
+#~ "It appears you have installed fonts in /var/ttfonts from a previous "
+#~ "version of xfstt. This has been changed and xfstt now uses /usr/share/"
+#~ "fonts/truetype. Please place any truetype fonts in that location."
+#~ msgstr ""
+#~ "xfstt の以前のバージョンによって、/var/ttfonts にフォントがインストールさ"
+#~ "れているようです。これは変更されており、xfstt は /usr/share/fonts/"
+#~ "truetype を使うようになっています。どの truetype フォントもこの位置に置く"
+#~ "ようにしてください。"
+
+#~ msgid "Server port changed to 7101"
+#~ msgstr "サーバのポート番号は 7101 に変更されました"
+
+#~ msgid ""
+#~ "Due to a conflict with xfs (X Font Server), in version 0.99.10 the "
+#~ "default port was changed. If you have X11 still configured to use port "
+#~ "7100 for xfstt, please modify your configuration to reflect this change. "
+#~ "See xfstt(1) manual page."
+#~ msgstr ""
+#~ "xfs (X Font Server) とぶつかるので、バージョン 0.99.10 で標準のポートが変"
+#~ "更されました。X11 がいまだに xfstt のためにポート 7100 を使うように設定さ"
+#~ "れていた場合、この変更を反映するように設定ファイルを修正してください。"
+#~ "xfstt(1) man ページを参照してください。"

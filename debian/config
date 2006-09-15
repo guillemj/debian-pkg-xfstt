@@ -3,15 +3,9 @@ set -e
 
 . /usr/share/debconf/confmodule
 
-#
-# New installation ? then no need to show notice, also not in next upgrades
-#
-if [ -z "$2" ]; then
-	db_fset xfstt/default_port_changed seen true
-else
-	db_input low xfstt/default_port_changed || true
-	db_go || true
-fi
+# Cleanup debconf questions from old versions (1.7-1).
+db_unregister xfstt/default_port_changed || true
+db_unregister xfstt/fonts_not_supplied || true
 
 if [ -e /etc/default/xfstt ]; then
 	. /etc/default/xfstt || true
@@ -26,9 +20,4 @@ fi
 
 db_input low xfstt/listen_tcp || true
 db_go || true
-
-if [ -e "/var/ttfonts" ]; then
-	db_input medium xfstt/fonts_not_supplied || true
-	db_go || true
-fi
 

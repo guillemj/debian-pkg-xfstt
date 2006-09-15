@@ -8,6 +8,9 @@ xfstt (1.7-2) UNRELEASED; urgency=low
       Thanks to André Costa <skit@argon.ath.cx>.
   * Now using Standards-Version 3.7.2 (no changes needed).
   * Add an LSB description header to the init script.
+  * Remove really old documentation from ancient upgrade paths:
+    - debconf notes that had low priority.
+    - FHS compliance and xbase compatibility from README.Debian.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 12 Apr 2006 03:53:38 +0300
 
