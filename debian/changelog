@@ -8,6 +8,7 @@ xfstt (1.7-3) UNRELEASED; urgency=low
     - Get errors by removing the trailing - from $(MAKE) install.
     - Remove old autoconf compatibility code reagrding --host and --build.
   * Fix typo in debian/copyright.
+  * Unify init script output with the one from xfs.
 
  -- Guillem Jover <guillem@debian.org>  Sun,  5 Nov 2006 19:30:00 +0200
 
