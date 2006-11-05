@@ -5,13 +5,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: xfstt 1.7-2\n"
 "Report-Msgid-Bugs-To: guillem@debian.org\n"
 "POT-Creation-Date: 2006-09-15 02:57+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Debian Description Translation Project <debconf@ddtp.debian."
-"org>\n"
-"Language-Team: de <LL@li.org>\n"
+"PO-Revision-Date: 2006-11-05 19:20+0200\n"
+"Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
+"Language-Team: de <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +19,7 @@ msgstr ""
 #. Description
 #: ../templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
-msgstr ""
+msgstr "Möchten Sie, das Xfstt an einem TCP-Port lauscht?"
 
 #. Type: boolean
 #. Description
@@ -29,6 +28,9 @@ msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
 msgstr ""
+"Xfstt läuft mir Root-Rechten, aber nur bis eine Verbindung mit dem Client "
+"etabliert ist, dann lässt es die Root-Rechte fallen und läuft als Benutzer "
+"nobody."
 
 #. Type: boolean
 #. Description
@@ -37,6 +39,9 @@ msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
+"Diese Herangehensweise ist recht sicher, aber falls Sie entfernten Rechnern "
+"keine Schriften anbieten wollen, wird empfohlen, dass nicht an "
+"Netzverbindungen gelauscht wird."
 
 #  Template: xfstt/fonts_not_provided
 #  ddtp-prioritize: 51
@@ -50,16 +55,16 @@ msgstr ""
 #~ "version of xfstt. This has been changed and xfstt now uses /usr/share/"
 #~ "fonts/truetype. Please place any truetype fonts in that location."
 #~ msgstr ""
-#~ "Es scheint, daß Sie in /var/ttfonts Fonts aus einer früheren Version von "
-#~ "xfstt installierten.  Diese haben sich verändert und xfstt benutzt jetzt /"
-#~ "usr/share/fonts/truetype.  Bitte legen Sie hier jegliche TrueType-Fonts "
+#~ "Es scheint, dass Sie in /var/ttfonts Fonts aus einer früheren Version von "
+#~ "xfstt installierten. Diese haben sich verändert und xfstt benutzt jetzt /"
+#~ "usr/share/fonts/truetype. Bitte legen Sie hier jegliche TrueType-Fonts "
 #~ "ab."
 
 #  Template: xfstt/default_port_changed
 #  ddtp-prioritize: 51
 #
 #~ msgid "Server port changed to 7101"
-#~ msgstr "Der Server-Port liegt lautet jetzt 7101"
+#~ msgstr "Der Server-Port ist auf 7101 geändert worden"
 
 #
 #~ msgid ""
@@ -69,7 +74,7 @@ msgstr ""
 #~ "See xfstt(1) manual page."
 #~ msgstr ""
 #~ "Wegen eines Konfliktes mit xfs (X Font Server) wurde die Port-"
-#~ "Voreinstellung ab Version 0.99.10 geändert.  Falls Sie X11 noch für den "
+#~ "Voreinstellung ab Version 0.99.10 geändert. Falls Sie X11 noch für den "
 #~ "Gebrauch von Port 7100 für xfstt konfiguriert haben, passen Sie bitte "
-#~ "Ihre Konfiguration entsprechend dieser Änderungen an.  Siehe auch die man-"
-#~ "page xfstt(1)."
+#~ "Ihre Konfiguration entsprechend dieser Änderungen an. Siehe auch die "
+#~ "Handbuchseite xfstt(1)."

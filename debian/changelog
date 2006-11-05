@@ -1,3 +1,11 @@
+xfstt (1.7-3) UNRELEASED; urgency=low
+
+  * Templates:
+    - Updated German. (Closes: #396046)
+      Thanks to Helge Kreutzmann <debian@helgefjell.de>.
+
+ -- Guillem Jover <guillem@debian.org>  Sun,  5 Nov 2006 19:30:00 +0200
+
 xfstt (1.7-2) unstable; urgency=low
 
   * Replace libfs-dev Build-Dependency with x11proto-fonts-dev.
