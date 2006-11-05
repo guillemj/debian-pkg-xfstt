@@ -1,4 +1,4 @@
-xfstt (1.7-3) UNRELEASED; urgency=low
+xfstt (1.7-3) unstable; urgency=low
 
   * Templates:
     - Updated German. (Closes: #396046)
@@ -10,7 +10,7 @@ xfstt (1.7-3) UNRELEASED; urgency=low
   * Fix typo in debian/copyright.
   * Unify init script output with the one from xfs.
 
- -- Guillem Jover <guillem@debian.org>  Sun,  5 Nov 2006 19:30:00 +0200
+ -- Guillem Jover <guillem@debian.org>  Sun,  5 Nov 2006 19:47:42 +0200
 
 xfstt (1.7-2) unstable; urgency=low
 
