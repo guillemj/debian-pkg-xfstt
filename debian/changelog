@@ -3,6 +3,7 @@ xfstt (1.7-3) UNRELEASED; urgency=low
   * Templates:
     - Updated German. (Closes: #396046)
       Thanks to Helge Kreutzmann <debian@helgefjell.de>.
+  * Update Tag field to match new debtags vocabulary.
 
  -- Guillem Jover <guillem@debian.org>  Sun,  5 Nov 2006 19:30:00 +0200
 
