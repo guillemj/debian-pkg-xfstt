@@ -13,13 +13,6 @@ LDFLAGS =
 export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
-# For autoconf 2.52 and newer only
-ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
-  confflags += --build $(DEB_HOST_GNU_TYPE)
-else
-  confflags += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
-endif
-
 ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
 	CXXFLAGS += -DDEBUG
 endif
@@ -36,10 +29,11 @@ debian/po/templates.pot: debian/templates
 config.status: configure
 	dh_testdir
 	
-	./configure $(confflags) \
-		--prefix=/usr \
-		--localstatedir=/var \
-		--mandir=\$${prefix}/share/man
+	./configure \
+	  --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE) \
+	  --prefix=/usr \
+	  --localstatedir=/var \
+	  --mandir=\$${prefix}/share/man
 
 build: config.status debian/po/templates.pot
 	dh_testdir
@@ -68,7 +62,8 @@ install: build
 	
 	# Temporal hack to give test.sh exec perms (Linda clean)
 	chmod a+x $(CURDIR)/doc/examples/test.sh
-	-$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
+	
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
 
 binary-indep: build install
 	# Nothing to do.
