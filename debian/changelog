@@ -7,6 +7,7 @@ xfstt (1.7-3) UNRELEASED; urgency=low
   * Cleanup of debian/rules:
     - Get errors by removing the trailing - from $(MAKE) install.
     - Remove old autoconf compatibility code reagrding --host and --build.
+  * Fix typo in debian/copyright.
 
  -- Guillem Jover <guillem@debian.org>  Sun,  5 Nov 2006 19:30:00 +0200
 
