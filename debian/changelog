@@ -7,6 +7,8 @@ xfstt (1.7-4) UNRELEASED; urgency=low
   * Templates:
     - Added Italian. (Closes: #449444)
       Thanks to Luca Monducci <luca.mo@tiscali.it>.
+    - Added Dutch. (Closes: #414772)
+      Thanks to Bart Cornelis <cobaco@skolelinux.no>.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 12 Dec 2007 06:32:25 +0200
 
