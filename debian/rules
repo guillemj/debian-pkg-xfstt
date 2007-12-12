@@ -13,6 +13,12 @@ LDFLAGS =
 export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
+ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
+  conf_gnu_type += --build $(DEB_HOST_GNU_TYPE)
+else
+  conf_gnu_type += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
+endif
+
 ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
 	CXXFLAGS += -DDEBUG
 endif
@@ -30,7 +36,7 @@ config.status: configure
 	dh_testdir
 	
 	./configure \
-	  --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE) \
+	  $(conf_gnu_type) \
 	  --prefix=/usr \
 	  --localstatedir=/var \
 	  --mandir=\$${prefix}/share/man
