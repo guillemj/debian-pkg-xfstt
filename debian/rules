@@ -43,7 +43,7 @@ config.status: configure
 
 build: config.status debian/po/templates.pot
 	dh_testdir
-
+	
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 
 clean:
