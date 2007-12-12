@@ -1,0 +1,43 @@
+# Italian translation of the xfstt debconf templates
+# This file is distributed under the same license as the xfstt package
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# Luca Monducci <luca.mo@tiscali.it>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfstt debconf templates\n"
+"Report-Msgid-Bugs-To: guillem@debian.org\n"
+"POT-Creation-Date: 2006-09-15 02:57+0300\n"
+"PO-Revision-Date: 2007-11-05 20:06+0100\n"
+"Last-Translator: Luca Monducci <luca.mo@tiscali.it>\n"
+"Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Do you want xfstt to listen on a TCP port?"
+msgstr "Mettere xfstt in ascolto su una porta TCP?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"Xfstt runs as superuser, but only before a connection is established with "
+"the client, then it drops superuser privileges and is run as user nobody."
+msgstr ""
+"Xfstt viene eseguito come superuser ma prima di stabilire una connessione "
+"con un client lascia i propri privilegi e gira con l'utente nobody."
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"This approach is fairly secure, but if you are not going to provide fonts to "
+"remote hosts, it is recommended to not listen to network connections."
+msgstr ""
+"Questo approccio è abbastanza sicuro ma se non si devono fornire tipi di "
+"carattere a macchine remote, si raccomanda di non mettere xfstt in ascolto "
+"di connessioni di rete."
