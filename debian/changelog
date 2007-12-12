@@ -1,6 +1,7 @@
 xfstt (1.7-4) UNRELEASED; urgency=low
 
   * Remove Tag field, it's better maintained outside the package.
+  * Now using Standards-Version 3.7.3 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Wed, 12 Dec 2007 06:32:25 +0200
 
