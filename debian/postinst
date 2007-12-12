@@ -14,7 +14,6 @@ if [ "$1" = configure ]; then
 	false)	RET=no
 		;;
 	esac
-	
 
 	if [ -e $CONFIGFILE ]; then
 		sed -e "s/^ *LISTEN_TCP=.*/LISTEN_TCP=\"$RET\"/" \
