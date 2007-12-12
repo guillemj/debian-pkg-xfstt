@@ -66,7 +66,7 @@ install: build
 	dh_clean -k
 	dh_installdirs
 	
-	# Temporal hack to give test.sh exec perms (Linda clean)
+	# XXX: Temporal hack to give test.sh exec perms (Linda clean)
 	chmod a+x $(CURDIR)/doc/examples/test.sh
 	
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
