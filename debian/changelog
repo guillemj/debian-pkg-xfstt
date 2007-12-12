@@ -1,4 +1,4 @@
-xfstt (1.7-4) UNRELEASED; urgency=low
+xfstt (1.7-4) unstable; urgency=low
 
   * Remove Tag field, it's better maintained outside the package.
   * Now using Standards-Version 3.7.3 (no changes needed).
@@ -10,7 +10,7 @@ xfstt (1.7-4) UNRELEASED; urgency=low
     - Added Dutch. (Closes: #414772)
       Thanks to Bart Cornelis <cobaco@skolelinux.no>.
 
- -- Guillem Jover <guillem@debian.org>  Wed, 12 Dec 2007 06:32:25 +0200
+ -- Guillem Jover <guillem@debian.org>  Wed, 12 Dec 2007 07:07:45 +0200
 
 xfstt (1.7-3) unstable; urgency=low
 
