@@ -12,10 +12,6 @@ The upstream source was downloaded from:
 
     <http://download.berlios.de/xfstt/>
 
-The debian packages are maintained through Subversion on:
-
-    <svn://svn.debian.org/pkg-xfstt/>
-
 Upstream Authors:
 
     Copyright (C) 1997, 1998, 1999 Herber Duerr and (possibly others)
