@@ -2,6 +2,8 @@ Source: xfstt
 Section: x11
 Priority: extra
 Maintainer: Guillem Jover <guillem@debian.org>
+Vcs-Browser: http://git.hadrons.org/?p=debian/pkgs/xfstt.git
+Vcs-Git: git://git.hadrons.org/git/debian/pkgs/xfstt.git
 Build-Depends: debhelper (>= 5), x11proto-fonts-dev
 Standards-Version: 3.7.3
 

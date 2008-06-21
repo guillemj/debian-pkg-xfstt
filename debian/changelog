@@ -1,3 +1,9 @@
+xfstt (1.7-5) UNRELEASED; urgency=low
+
+  * Add Vcs-Browser and Vcs-Git fields.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 21 Jun 2008 04:54:01 +0300
+
 xfstt (1.7-4) unstable; urgency=low
 
   * Remove Tag field, it's better maintained outside the package.
