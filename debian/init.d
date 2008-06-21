@@ -1,7 +1,5 @@
 #!/bin/sh
 #
-# $Id$
-#
 ### BEGIN INIT INFO
 # Provides:          xfs xfstt
 # Required-Start:    $local_fs $network
