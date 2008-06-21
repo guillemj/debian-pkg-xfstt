@@ -12,11 +12,11 @@ The upstream source was downloaded from:
 
     <http://download.berlios.de/xfstt/>
 
-Upstream Authors:
+Copyright Holders:
 
-    Copyright (C) 1997, 1998, 1999 Herber Duerr and (possibly others)
-    Copyright (C) 1999 Stephen Carpenter
-    Copyright (C) 2002-2005 Guillem Jover
+    Copyright © 1997, 1998, 1999 Herber Duerr and (possibly others)
+    Copyright © 1999 Stephen Carpenter
+    Copyright © 2002-2005 Guillem Jover
 
 License:
 
@@ -35,5 +35,5 @@ License:
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 On Debian systems, the complete text of the GNU Lesser General
-Public License can be found in `/usr/share/common-licenses/LGPL'.
+Public License can be found in '/usr/share/common-licenses/LGPL'.
 

@@ -3,6 +3,9 @@ xfstt (1.7-5) UNRELEASED; urgency=low
   * Add Vcs-Browser and Vcs-Git fields.
   * Now using Standards-Version 3.8.0.
   * Remove packaging svn information from debian/copyright.
+  * Cleanup debian/copyright:
+    - Change 'Upstream Authors' to 'Copyright Holders'.
+    - Use UTF-8 copyright symbol.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 21 Jun 2008 04:54:01 +0300
 
