@@ -7,6 +7,7 @@ xfstt (1.7-5) UNRELEASED; urgency=low
   * Cleanup debian/copyright:
     - Change 'Upstream Authors' to 'Copyright Holders'.
     - Use UTF-8 copyright symbol.
+    - Refer to LGPL-2 from common-licenses instead of just LGPL.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 21 Jun 2008 04:54:01 +0300
 
