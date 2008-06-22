@@ -8,6 +8,10 @@ xfstt (1.7-5) UNRELEASED; urgency=low
     - Change 'Upstream Authors' to 'Copyright Holders'.
     - Use UTF-8 copyright symbol.
     - Refer to LGPL-2 from common-licenses instead of just LGPL.
+  * Ignore lintian warning about empty /usr/share/fonts/truetype/ dir:
+    - Bump debhelper Build-Depends to 6.0.7.
+    - Add a call to dh_lintian.
+    - Add lintian-override file.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 21 Jun 2008 04:54:01 +0300
 

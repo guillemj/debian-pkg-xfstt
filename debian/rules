@@ -83,6 +83,7 @@ binary-arch: build install
 	dh_installinit
 	dh_installman
 	dh_installchangelogs CHANGES
+	dh_lintian
 	dh_link
 	dh_strip
 	dh_compress
