@@ -19,11 +19,11 @@ endif
 CXXFLAGS = -Wall -g
 LDFLAGS =
 
-ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
+ifneq (,$(filter debug,$(DEB_BUILD_OPTIONS)))
 	CXXFLAGS += -DDEBUG
 endif
 
-ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
 	CXXFLAGS += -O0
 else
 	CXXFLAGS += -O2 -fomit-frame-pointer -ffast-math
