@@ -78,7 +78,8 @@ case "$1" in
 	;;
 
     *)
-	echo "Usage: /etc/init.d/xfstt {start|stop|force-reload|restart|status}"
+	N=/etc/init.d/xfstt
+	echo "Usage: $N {start|stop|force-reload|restart|status}"
 	exit 1
     ;;
 esac
