@@ -21,7 +21,7 @@
 set -e
 
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
-XFSTT=/usr/bin/xfstt
+DAEMON=/usr/bin/xfstt
 DESC="X font server"
 PIDFILE=/var/run/xfstt.pid
 CONFIGFILE=/etc/default/xfstt
@@ -36,7 +36,7 @@ daemon="--daemon"
 
 ARGS="$daemon $portarg $userarg"
 
-test -x "$XFSTT" || exit 0
+test -x "$DAEMON" || exit 0
 
 if [ -e $CONFIGFILE ]; then
 	. $CONFIGFILE
@@ -54,27 +54,27 @@ case "$1" in
     start)
 	log_daemon_msg "Starting $DESC" "xfstt"
 	start-stop-daemon --start --quiet --pidfile $PIDFILE \
-		--exec $XFSTT -- $ARGS
+		--exec $DAEMON -- $ARGS
 	log_end_msg $?
     ;;
 
     stop)
 	log_daemon_msg "Stopping $DESC" "xfstt"
 	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
-		--exec $XFSTT
+		--exec $DAEMON
 	log_end_msg $?
     ;;
 
     force-reload|restart)
 	$0 stop
 	log_action_begin_msg "Reloading $DESC configuration"
-	$XFSTT --sync >/dev/null
+	$DAEMON --sync >/dev/null
 	log_action_end_msg $?
 	$0 start
     ;;
 
   status)
-	status_of_proc $XFSTT xfstt
+	status_of_proc $DAEMON xfstt
 	;;
 
     *)
