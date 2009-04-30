@@ -18,6 +18,8 @@
 # Guillem Jover <guillem@debian.org>.
 #
 
+set -e
+
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 XFSTT=/usr/bin/xfstt
 DESC="X font server"

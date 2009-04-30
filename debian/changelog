@@ -5,6 +5,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
   * Use $(filter ...) instead of $(findstring ...) to extract space separated
     options from DEB_BUILD_OPTIONS in debian/rules.
   * Rename debian/init.d to debian/init.
+  * Add 'set -e' to the init script.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 
