@@ -10,6 +10,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
     - Add LSB status action support to the init script.
     - Rename XFSTT variable with DAEMON.
     - Move self script name into a new N variable.
+    - Use new NAME variable instead of explicit 'xfstt'.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 

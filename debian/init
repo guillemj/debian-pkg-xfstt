@@ -21,10 +21,11 @@
 set -e
 
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
-DAEMON=/usr/bin/xfstt
+NAME=xfstt
+DAEMON=/usr/bin/$NAME
 DESC="X font server"
-PIDFILE=/var/run/xfstt.pid
-CONFIGFILE=/etc/default/xfstt
+PIDFILE=/var/run/$NAME.pid
+CONFIGFILE=/etc/default/$NAME
 
 # To change the default port and/or user modify and uncomment
 portno=7101
@@ -52,14 +53,14 @@ fi
 
 case "$1" in
     start)
-	log_daemon_msg "Starting $DESC" "xfstt"
+	log_daemon_msg "Starting $DESC" "$NAME"
 	start-stop-daemon --start --quiet --pidfile $PIDFILE \
 		--exec $DAEMON -- $ARGS
 	log_end_msg $?
     ;;
 
     stop)
-	log_daemon_msg "Stopping $DESC" "xfstt"
+	log_daemon_msg "Stopping $DESC" "$NAME"
 	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
 		--exec $DAEMON
 	log_end_msg $?
@@ -74,11 +75,11 @@ case "$1" in
     ;;
 
   status)
-	status_of_proc $DAEMON xfstt
+	status_of_proc $DAEMON $NAME
 	;;
 
     *)
-	N=/etc/init.d/xfstt
+	N=/etc/init.d/$NAME
 	echo "Usage: $N {start|stop|force-reload|restart|status}"
 	exit 1
     ;;
