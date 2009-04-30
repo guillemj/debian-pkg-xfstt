@@ -73,8 +73,12 @@ case "$1" in
 	$0 start
     ;;
 
+  status)
+	status_of_proc $XFSTT xfstt
+	;;
+
     *)
-	echo "Usage: /etc/init.d/xfstt {start|stop|force-reload|restart}"
+	echo "Usage: /etc/init.d/xfstt {start|stop|force-reload|restart|status}"
 	exit 1
     ;;
 esac

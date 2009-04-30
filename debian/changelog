@@ -6,6 +6,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
     options from DEB_BUILD_OPTIONS in debian/rules.
   * Rename debian/init.d to debian/init.
   * Add 'set -e' to the init script.
+  * Add LSB status action support to the init script.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 
