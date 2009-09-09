@@ -15,6 +15,9 @@ xfstt (1.7-6) UNRELEASED; urgency=low
   * Only install useful/helpful example files:
     - Remove sample init script.
     - Remove test script needing the source code. (Closes: #489674)
+  * Debconf translations:
+    - Added Russian. (Closes: #539462)
+      Thanks to Yuri Kozlov <yuray@komyakino.ru>.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 
