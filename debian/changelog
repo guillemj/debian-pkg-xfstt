@@ -18,6 +18,11 @@ xfstt (1.7-6) UNRELEASED; urgency=low
   * Debconf translations:
     - Added Russian. (Closes: #539462)
       Thanks to Yuri Kozlov <yuray@komyakino.ru>.
+  * Fix init script dependency information: (Closes: #542677)
+    - Remove conflicting xfs from Provides.
+    - Add $remote_fs to Required-Start and Required-Stop.
+    - Add X-Start-Before with current display managers.
+    Thanks to Petter Reinholdtsen <pere@hungry.com>.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 
