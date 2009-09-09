@@ -66,9 +66,6 @@ install: build
 	dh_prep
 	dh_installdirs
 	
-	# XXX: Temporal hack to give test.sh exec perms (Linda clean)
-	chmod a+x $(CURDIR)/doc/examples/test.sh
-	
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
 
 binary-indep: build install

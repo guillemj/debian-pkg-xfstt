@@ -12,6 +12,9 @@ xfstt (1.7-6) UNRELEASED; urgency=low
     - Move self script name into a new N variable.
     - Use new NAME variable instead of explicit 'xfstt'.
   * Now using Standards-Version 3.8.3 (no changes needed).
+  * Only install useful/helpful example files:
+    - Remove sample init script.
+    - Remove test script needing the source code. (Closes: #489674)
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 
