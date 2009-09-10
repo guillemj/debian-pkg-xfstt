@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Type: boolean
 #. Description
@@ -30,9 +31,9 @@ msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
 msgstr ""
-"Xfstt выполняется с правами суперпользователя только до установления соединения "
-"с клиентом. После установления соединения суперпользовательские права "
-"сбрасываются и программа выполняется с правами учётной записи nobody."
+"Xfstt выполняется с правами суперпользователя только до установления "
+"соединения с клиентом. После установления соединения суперпользовательские "
+"права сбрасываются и программа выполняется с правами учётной записи nobody."
 
 #. Type: boolean
 #. Description
@@ -44,4 +45,3 @@ msgstr ""
 "Такой подход достаточно безопасен, но если вы не собираетесь предоставлять "
 "шрифты удалённым компьютерам, то рекомендуется не включать прослушивание "
 "сети."
-

@@ -20,14 +20,14 @@ msgstr ""
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: boolean
 #. Description
 #: ../templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
-msgstr "縌uiere que xfstt escuche en un puerto TCP?"
+msgstr "驴Quiere que xfstt escuche en un puerto TCP?"
 
 #. Type: boolean
 #. Description
@@ -36,8 +36,8 @@ msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
 msgstr ""
-"Xfstt funciona como superusuario, pero solo antes de establecer una conexi髇 "
-"con un cliente, despu閟 deja los privilegios de superusuario y funciona como "
+"Xfstt funciona como superusuario, pero solo antes de establecer una conexi贸n "
+"con un cliente, despu茅s deja los privilegios de superusuario y funciona como "
 "usuario 'nobody'."
 
 #. Type: boolean
@@ -47,7 +47,7 @@ msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
 msgstr ""
-"Esta aproximaci髇 es bastante segura, pero si no va a suministrar fuentes a "
+"Esta aproximaci贸n es bastante segura, pero si no va a suministrar fuentes a "
 "anfitriones remotos, se recomienda no escuchar en conexiones de red. "
 
 #~ msgid "Fonts not provided by this package"
@@ -58,7 +58,7 @@ msgstr ""
 #~ "version of xfstt. This has been changed and xfstt now uses /usr/share/"
 #~ "fonts/truetype. Please place any truetype fonts in that location."
 #~ msgstr ""
-#~ "Parece que tiene fuentes instaladas en /var/ttfonts de una versi髇 "
+#~ "Parece que tiene fuentes instaladas en /var/ttfonts de una versi贸n "
 #~ "anterior de xfstt. Esto ha cambiado y xfstt ahora usa /usr/share/fonts/"
 #~ "truetype. Por favor ponga cualquier fuente truetype en este directorio."
 
@@ -71,7 +71,7 @@ msgstr ""
 #~ "7100 for xfstt, please modify your configuration to reflect this change. "
 #~ "See xfstt(1) manual page."
 #~ msgstr ""
-#~ "A causa de un conflicto con xfs (X Font Server), en la versi髇 0.99.10 el "
-#~ "puerto predeterminado ha cambiado. Si a鷑 tiene X11 configurado para usar "
-#~ "el puerto 7100 con xfstt, por favor modifique su configuraci髇 para "
+#~ "A causa de un conflicto con xfs (X Font Server), en la versi贸n 0.99.10 el "
+#~ "puerto predeterminado ha cambiado. Si a煤n tiene X11 configurado para usar "
+#~ "el puerto 7100 con xfstt, por favor modifique su configuraci贸n para "
 #~ "reflejar este cambio. Vea la pagina de manual xfstt(1)."

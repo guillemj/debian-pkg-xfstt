@@ -20,7 +20,7 @@ msgstr ""
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: boolean
@@ -49,4 +49,3 @@ msgid ""
 msgstr ""
 "Aquesta aproximació és força segura, però si no heu de subministrar fonts a "
 "un amfitrió remot, és recomanable no escoltar en connexions de xarxa."
-

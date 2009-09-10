@@ -23,6 +23,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
     - Add $remote_fs to Required-Start and Required-Stop.
     - Add X-Start-Before with current display managers.
     Thanks to Petter Reinholdtsen <pere@hungry.com>.
+  * Convert all debconf translations to UTF-8.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 

@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: Bart Cornelis <cobaco@skolelinux.no>\n"
 "Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: boolean
@@ -24,12 +24,21 @@ msgstr "Wilt u xfstt laten luisteren op een TCP-poort?"
 #. Type: boolean
 #. Description
 #: ../templates:1001
-msgid "Xfstt runs as superuser, but only before a connection is established with the client, then it drops superuser privileges and is run as user nobody."
-msgstr "Xfstt draait als beheerder totdat een verbinding met een client gemaakt wordt, na het maken van de verbinding laat xfstt de beheerdersrechten vallen en gaat verder als de gebruiker 'nobody'."
+msgid ""
+"Xfstt runs as superuser, but only before a connection is established with "
+"the client, then it drops superuser privileges and is run as user nobody."
+msgstr ""
+"Xfstt draait als beheerder totdat een verbinding met een client gemaakt "
+"wordt, na het maken van de verbinding laat xfstt de beheerdersrechten vallen "
+"en gaat verder als de gebruiker 'nobody'."
 
 #. Type: boolean
 #. Description
 #: ../templates:1001
-msgid "This approach is fairly secure, but if you are not going to provide fonts to remote hosts, it is recommended to not listen to network connections."
-msgstr "Deze aanpak is redelijk veilig, maar als u geen lettertypes gaat aanbieden aan andere computers is het aan te raden om niet te luisteren voor netwerkverbindingen."
-
+msgid ""
+"This approach is fairly secure, but if you are not going to provide fonts to "
+"remote hosts, it is recommended to not listen to network connections."
+msgstr ""
+"Deze aanpak is redelijk veilig, maar als u geen lettertypes gaat aanbieden "
+"aan andere computers is het aan te raden om niet te luisteren voor "
+"netwerkverbindingen."
