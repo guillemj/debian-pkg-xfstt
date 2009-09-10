@@ -6,7 +6,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
     options from DEB_BUILD_OPTIONS in debian/rules.
   * Cleanup init script:
     - Rename debian/init.d to debian/init.
-    - Add 'set -e' to the init script.
+    - Add 'set -e' to the init script, but not for the actual action.
     - Add LSB status action support to the init script.
     - Rename XFSTT variable with DAEMON.
     - Move self script name into a new N variable.

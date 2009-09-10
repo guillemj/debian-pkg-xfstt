@@ -52,31 +52,34 @@ fi
 
 . /lib/lsb/init-functions
 
+set +e
+
 case "$1" in
     start)
 	log_daemon_msg "Starting $DESC" "$NAME"
 	start-stop-daemon --start --quiet --pidfile $PIDFILE \
-		--exec $DAEMON -- $ARGS || status=$?
-	log_end_msg $status
+	                  --exec $DAEMON -- $ARGS
+	log_end_msg $?
     ;;
 
     stop)
 	log_daemon_msg "Stopping $DESC" "$NAME"
 	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
-		--exec $DAEMON || status=$?
-	log_end_msg $status
+	                  --exec $DAEMON
+	log_end_msg $?
     ;;
 
     force-reload|restart)
 	$0 stop
 	log_action_begin_msg "Reloading $DESC configuration"
-	$DAEMON --sync >/dev/null || status=$?
-	log_action_end_msg $status
+	$DAEMON --sync >/dev/null
+	log_action_end_msg $?
 	$0 start
     ;;
 
   status)
 	status_of_proc $DAEMON $NAME
+	exit $?
 	;;
 
     *)
