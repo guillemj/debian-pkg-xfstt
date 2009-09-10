@@ -1,7 +1,7 @@
+# German po-debconf translation for xfstt
+# This file is distributed under the same license as the xfstt package.
 #
-# This file is from the DDTP, the Debian Description Translation Project
-#
-# See http://ddtp.debian.org/ for more information.
+# Copyright © 2003, 2006  Helge Kreutzmann <debian@helgefjell.de>
 #
 msgid ""
 msgstr ""

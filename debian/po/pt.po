@@ -1,6 +1,7 @@
-# Portuguese translation for xfstt
+# Portuguese po-debconf translation for xfstt
 # This file is distributed under the same license as the xfstt package.
-# André Costa <skit@argon.ath.cx>, 2006.
+#
+# Copyright © 2006  André Costa <skit@argon.ath.cx>
 #
 msgid ""
 msgstr ""

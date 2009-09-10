@@ -1,7 +1,7 @@
-# translation of da.po to Danish
-# translation of xfstt to Danish
-# Claus Hindsgaul <claus_h@image.dk>, 2004.
+# Danish po-debconf translation for xfstt
+# This file is distributed under the same license as the xfstt package.
 #
+# Copyright © 2004  Claus Hindsgaul <claus_h@image.dk>
 #
 msgid ""
 msgstr ""

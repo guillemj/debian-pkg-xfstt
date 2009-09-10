@@ -1,7 +1,7 @@
-# Italian translation of the xfstt debconf templates
-# This file is distributed under the same license as the xfstt package
-# Copyright (C) 2007 Free Software Foundation, Inc.
-# Luca Monducci <luca.mo@tiscali.it>, 2007.
+# Italian po-debconf translation for xfstt
+# This file is distributed under the same license as the xfstt package.
+#
+# Copyright © 2007  Luca Monducci <luca.mo@tiscali.it>
 #
 msgid ""
 msgstr ""
