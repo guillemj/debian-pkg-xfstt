@@ -1,3 +1,4 @@
+etc/insserv.conf.d
 usr/bin
 usr/share/fonts/truetype
 usr/share/doc/xfstt

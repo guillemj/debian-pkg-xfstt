@@ -25,6 +25,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
     Thanks to Petter Reinholdtsen <pere@hungry.com>.
   * Convert all debconf translations to UTF-8.
   * Unify debconf template translation headers.
+  * Define a new $x-font-server init.d virtual facility with xfstt as value.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
 

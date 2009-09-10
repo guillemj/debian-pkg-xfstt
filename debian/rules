@@ -66,6 +66,9 @@ install: build
 	dh_prep
 	dh_installdirs
 	
+	cp $(CURDIR)/debian/insserv \
+	   $(CURDIR)/debian/xfstt/etc/insserv.conf.d/xfstt
+	
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
 
 binary-indep: build install
