@@ -1,4 +1,4 @@
-xfstt (1.7-6) UNRELEASED; urgency=low
+xfstt (1.7-6) unstable; urgency=low
 
   * Switch to debhelper compatibility level 7.
   * Use dh_prep instead of “dh_clean -k”.
@@ -27,7 +27,7 @@ xfstt (1.7-6) UNRELEASED; urgency=low
   * Unify debconf template translation headers.
   * Define a new $x-font-server init.d virtual facility with xfstt as value.
 
- -- Guillem Jover <guillem@debian.org>  Mon, 09 Feb 2009 22:11:01 +0200
+ -- Guillem Jover <guillem@debian.org>  Thu, 10 Sep 2009 22:41:38 +0200
 
 xfstt (1.7-5) unstable; urgency=low
 
