@@ -3,6 +3,9 @@ xfstt (1.7-7) UNRELEASED; urgency=low
   * Switch to source format “3.0 (quilt)”.
   * Fix copyright notice for Vietnamese translation.
   * Now using Standards-Version 3.8.4 (no changes needed).
+  * Create the unix socket directory with mode 1777 regardless of umask.
+    Which was making xfs not create its socket file due to it running
+    unprivileged. (Closes: #579907)
 
  -- Guillem Jover <guillem@debian.org>  Tue, 04 May 2010 04:26:53 +0200
 

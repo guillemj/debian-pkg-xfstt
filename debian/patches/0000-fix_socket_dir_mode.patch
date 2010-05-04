@@ -1,0 +1,14 @@
+---
+ src/xfstt.cc |    1 +
+ 1 file changed, 1 insertion(+)
+
+--- a/src/xfstt.cc
++++ b/src/xfstt.cc
+@@ -908,6 +908,7 @@ fs_connection_setup(fs_conn &conn)
+ 		sprintf(s_unix.sun_path, "%s/fs%d", sockdir, conn.port);
+ 		sockname = s_unix.sun_path;
+ 		mkdir(sockdir, 01777);
++		chmod(sockdir, 01777);
+ 		unlink(s_unix.sun_path);
+ 		old_umask = umask(0);
+ 
