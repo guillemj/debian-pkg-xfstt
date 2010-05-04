@@ -11,6 +11,9 @@ xfstt (1.7-7) UNRELEASED; urgency=low
       there's been an error. This happens usually on broken symlinks.
       Thanks to Edward Welbourne <eddy@opera.com>. (Closes: #500724, #559142)
     - Handle mmap() errors, so that we don't end up accessing invalid memory.
+  * Fix aborts when building with fortify support due to its bound checks.
+    The current code is perfectly valid, but the compiler is too strict.
+    Thanks to Niall Creech <niallcreech@googlemail.com>. (Closes: #569316)
 
  -- Guillem Jover <guillem@debian.org>  Tue, 04 May 2010 04:26:53 +0200
 
