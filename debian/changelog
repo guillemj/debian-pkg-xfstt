@@ -1,4 +1,4 @@
-xfstt (1.7-7) UNRELEASED; urgency=low
+xfstt (1.7-7) unstable; urgency=low
 
   * Switch to source format “3.0 (quilt)”.
   * Fix copyright notice for Vietnamese translation.
@@ -15,7 +15,7 @@ xfstt (1.7-7) UNRELEASED; urgency=low
     The current code is perfectly valid, but the compiler is too strict.
     Thanks to Niall Creech <niallcreech@googlemail.com>. (Closes: #569316)
 
- -- Guillem Jover <guillem@debian.org>  Tue, 04 May 2010 04:26:53 +0200
+ -- Guillem Jover <guillem@debian.org>  Tue, 04 May 2010 06:07:44 +0200
 
 xfstt (1.7-6) unstable; urgency=low
 
