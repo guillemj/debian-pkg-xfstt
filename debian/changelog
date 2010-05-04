@@ -6,6 +6,11 @@ xfstt (1.7-7) UNRELEASED; urgency=low
   * Create the unix socket directory with mode 1777 regardless of umask.
     Which was making xfs not create its socket file due to it running
     unprivileged. (Closes: #579907)
+  * Fix segfaults due to font open errors:
+    - On error in open() set absbase to 0, so that openError() can be aware
+      there's been an error. This happens usually on broken symlinks.
+      Thanks to Edward Welbourne <eddy@opera.com>. (Closes: #500724, #559142)
+    - Handle mmap() errors, so that we don't end up accessing invalid memory.
 
  -- Guillem Jover <guillem@debian.org>  Tue, 04 May 2010 04:26:53 +0200
 
