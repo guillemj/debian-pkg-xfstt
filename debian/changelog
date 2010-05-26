@@ -1,11 +1,11 @@
-xfstt (1.7-8) UNRELEASED; urgency=low
+xfstt (1.7-8) unstable; urgency=low
 
   * Fix abort when listing fonts due to fortify support. The current code
     does not pose any real problem as the overwritten variable gets
     initialized later on, although the fix makes it correct and future-proof.
     Thanks to Erik Devriendt <erik.devriendt@siemens.com>. (Closes: #583202)
 
- -- Guillem Jover <guillem@debian.org>  Wed, 26 May 2010 14:02:58 +0200
+ -- Guillem Jover <guillem@debian.org>  Wed, 26 May 2010 14:08:40 +0200
 
 xfstt (1.7-7) unstable; urgency=low
 
