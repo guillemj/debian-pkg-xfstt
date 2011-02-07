@@ -41,10 +41,16 @@ config.status: configure
 	  --localstatedir=/var \
 	  --mandir=\$${prefix}/share/man
 
-build: config.status debian/po/templates.pot
+build-indep:
+
+build-arch: config.status debian/po/templates.pot
 	dh_testdir
 	
 	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
+
+build: build-indep build-arch
+
+.PHONY: build-indep build-arch build
 
 clean:
 	dh_testdir
@@ -60,7 +66,9 @@ clean:
 	
 	dh_clean
 
-install: build
+.PHONY: clean
+
+install-arch: build-arch
 	dh_testdir
 	dh_testroot
 	dh_prep
@@ -71,10 +79,14 @@ install: build
 	
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
 
-binary-indep: build install
+install: install-arch
+
+.PHONY: install-arch install
+
+binary-indep:
 	# Nothing to do.
 
-binary-arch: build install
+binary-arch: build-arch install-arch
 	dh_testdir
 	dh_testroot
 	dh_installdebconf
@@ -96,5 +108,4 @@ binary-arch: build install
 
 binary: binary-indep binary-arch
 
-.PHONY: build clean binary-indep binary-arch binary
-
+.PHONY: binary-indep binary-arch binary

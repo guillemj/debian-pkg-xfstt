@@ -9,6 +9,14 @@ xfstt (1.8-1) UNRELEASED; urgency=low
     the daemon from the init script force-reload action, support newly
     introduced in upstream.
   * Add reload as an alias for force-reload on the init script.
+  * Rework debian/rules targets:
+    - Rename build to build-arch.
+    - Add new build-indep target.
+    - Add new build target with build-arch as prerequisite.
+    - Rename install to install-arch.
+    - Add new install target with install-arch as prerequisite.
+    - Remove binary-indep prerequisites.
+    - Change binary-arch prerequisites to build-arch and install-arch.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 18 Nov 2010 06:19:12 +0100
 
