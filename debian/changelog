@@ -1,4 +1,4 @@
-xfstt (1.8-1) UNRELEASED; urgency=low
+xfstt (1.8-1) unstable; urgency=low
 
   * New upstream release.
     - Remove patches merged upstream.
@@ -18,7 +18,7 @@ xfstt (1.8-1) UNRELEASED; urgency=low
     - Remove binary-indep prerequisites.
     - Change binary-arch prerequisites to build-arch and install-arch.
 
- -- Guillem Jover <guillem@debian.org>  Thu, 18 Nov 2010 06:19:12 +0100
+ -- Guillem Jover <guillem@debian.org>  Mon, 07 Feb 2011 03:29:42 +0100
 
 xfstt (1.7-8) unstable; urgency=low
 
