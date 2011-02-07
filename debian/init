@@ -68,15 +68,17 @@ case "$1" in
 	                  --exec $DAEMON
 	log_end_msg $?
     ;;
-
-    force-reload|restart)
+    restart)
+	log_action_msg "Restarting $DESC"
 	$0 stop
-	log_action_begin_msg "Reloading $DESC configuration"
-	$DAEMON --sync >/dev/null
-	log_action_end_msg $?
 	$0 start
     ;;
-
+    force-reload)
+	log_action_begin_msg "Reloading $DESC configuration"
+	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
+	                  --exec $DAEMON --signal HUP
+	log_action_end_msg $?
+    ;;
   status)
 	status_of_proc $DAEMON $NAME
 	exit $?

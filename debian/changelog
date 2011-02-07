@@ -5,6 +5,9 @@ xfstt (1.8-1) UNRELEASED; urgency=low
     - Update copyright years.
     - Update name of upstream changelog file.
   * Do not install upstream README and TODO files.
+  * Send SIGHUP instead of stopping, calling it with --sync and starting
+    the daemon from the init script force-reload action, support newly
+    introduced in upstream.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 18 Nov 2010 06:19:12 +0100
 
