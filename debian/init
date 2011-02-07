@@ -73,7 +73,7 @@ case "$1" in
 	$0 stop
 	$0 start
     ;;
-    force-reload)
+    reload|force-reload)
 	log_action_begin_msg "Reloading $DESC configuration"
 	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
 	                  --exec $DAEMON --signal HUP
@@ -86,7 +86,7 @@ case "$1" in
 
     *)
 	N=/etc/init.d/$NAME
-	echo "Usage: $N {start|stop|force-reload|restart|status}"
+	echo "Usage: $N {start|stop|restart|reload|force-reload|status}"
 	exit 1
     ;;
 esac
