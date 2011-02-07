@@ -21,4 +21,3 @@ fi
 
 db_input low xfstt/listen_tcp || true
 db_go || true
-

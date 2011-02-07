@@ -19,4 +19,3 @@ Description: X Font Server for TrueType fonts
  as the TrueType fonts used on Windows operating systems.
  .
  Note: This package does not contain fonts. They must be obtained separately.
-
