@@ -1,6 +1,7 @@
 xfstt (1.8-2) UNRELEASED; urgency=low
 
   * Add missing Build-Depends on pkg-config. (Closes: #612255)
+  * Now using Standards-Version 3.9.1 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Mon, 07 Feb 2011 18:02:05 +0100
 
