@@ -4,6 +4,7 @@ xfstt (1.8-1) UNRELEASED; urgency=low
     - Remove patches merged upstream.
     - Update copyright years.
     - Update name of upstream changelog file.
+  * Do not install upstream README and TODO files.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 18 Nov 2010 06:19:12 +0100
 
