@@ -1,5 +1,1 @@
 0000-fix_socket_dir_mode.patch
-0001-libfstt-Fix-segfault-on-font-file-open-error.patch
-0002-Fix-segfaults-due-to-mmap-failure.patch
-0003-Set-info-file-magic-and-type-TTFNheader-fields-in-tw.patch
-0004-Fix-a-crash-when-listing-fonts-on-fortified-builds.patch
