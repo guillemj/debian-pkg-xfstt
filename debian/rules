@@ -60,9 +60,9 @@ clean:
 	[ ! -f Makefile ] || $(MAKE) clean
 	
 	-test -r /usr/share/misc/config.sub && \
-	  cp -f /usr/share/misc/config.sub config/config.sub
+	  cp -f /usr/share/misc/config.sub build-aux/config.sub
 	-test -r /usr/share/misc/config.guess && \
-	  cp -f /usr/share/misc/config.guess config/config.guess
+	  cp -f /usr/share/misc/config.guess build-aux/config.guess
 	
 	dh_clean
 
