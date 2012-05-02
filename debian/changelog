@@ -1,4 +1,4 @@
-xfstt (1.9-1) UNRELEASED; urgency=low
+xfstt (1.9-1) unstable; urgency=low
 
   * New upstream release.
     - Remove patches merged upstream.
@@ -6,7 +6,7 @@ xfstt (1.9-1) UNRELEASED; urgency=low
     - Copy config.guess and config.sub to build-aux/ instead of config/.
   * Now using Standards-Version 3.9.3 (no changes needed).
 
- -- Guillem Jover <guillem@debian.org>  Wed, 02 May 2012 13:44:03 +0200
+ -- Guillem Jover <guillem@debian.org>  Wed, 02 May 2012 13:50:39 +0200
 
 xfstt (1.8-2) unstable; urgency=low
 
