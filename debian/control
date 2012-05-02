@@ -6,7 +6,7 @@ Homepage: http://developer.berlios.de/projects/xfstt/
 Vcs-Browser: http://git.hadrons.org/?p=debian/pkgs/xfstt.git
 Vcs-Git: git://git.hadrons.org/git/debian/pkgs/xfstt.git
 Build-Depends: debhelper (>= 7), pkg-config, x11proto-fonts-dev
-Standards-Version: 3.9.1
+Standards-Version: 3.9.3
 
 Package: xfstt
 Architecture: any

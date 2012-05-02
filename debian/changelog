@@ -4,6 +4,7 @@ xfstt (1.9-1) UNRELEASED; urgency=low
     - Remove patches merged upstream.
     - Update copyright years.
     - Copy config.guess and config.sub to build-aux/ instead of config/.
+  * Now using Standards-Version 3.9.3 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Wed, 02 May 2012 13:44:03 +0200
 
