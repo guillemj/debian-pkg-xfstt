@@ -5,7 +5,8 @@ Maintainer: Guillem Jover <guillem@debian.org>
 Homepage: http://developer.berlios.de/projects/xfstt/
 Vcs-Browser: http://git.hadrons.org/?p=debian/pkgs/xfstt.git
 Vcs-Git: git://git.hadrons.org/git/debian/pkgs/xfstt.git
-Build-Depends: debhelper (>= 7), pkg-config, x11proto-fonts-dev
+Build-Depends: debhelper (>= 7), autotools-dev (>= 20120210.1), pkg-config,
+ x11proto-fonts-dev
 Standards-Version: 3.9.3
 
 Package: xfstt
