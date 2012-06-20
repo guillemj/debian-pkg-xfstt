@@ -25,6 +25,7 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin
 NAME=xfstt
 DAEMON=/usr/bin/$NAME
 DESC="X font server"
+CACHEDIR=/var/cache/xfstt
 PIDFILE=/var/run/$NAME.pid
 CONFIGFILE=/etc/default/$NAME
 
@@ -57,6 +58,7 @@ set +e
 case "$1" in
     start)
 	log_daemon_msg "Starting $DESC" "$NAME"
+	mkdir -p $CACHEDIR
 	start-stop-daemon --start --quiet --oknodo --pidfile $PIDFILE \
 	                  --exec $DAEMON -- $ARGS
 	log_end_msg $?
