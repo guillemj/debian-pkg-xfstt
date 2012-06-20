@@ -16,17 +16,16 @@ else
   conf_gnu_type += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
 endif
 
-CXXFLAGS = -Wall -g
-LDFLAGS =
+CPPFLAGS = $(shell dpkg-buildflags --get CPPFLAGS)
+CXXFLAGS = $(shell dpkg-buildflags --get CXXFLAGS) -Wall
+LDFLAGS = $(shell dpkg-buildflags --get LDFLAGS)
 
 ifneq (,$(filter debug,$(DEB_BUILD_OPTIONS)))
 	CXXFLAGS += -DDEBUG
 endif
 
-ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
-	CXXFLAGS += -O0
-else
-	CXXFLAGS += -O2 -fomit-frame-pointer -ffast-math
+ifeq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
+	CXXFLAGS += -fomit-frame-pointer -ffast-math
 endif
 
 debian/po/templates.pot: debian/templates
@@ -46,7 +45,8 @@ build-indep:
 build-arch: config.status debian/po/templates.pot
 	dh_testdir
 	
-	$(MAKE) CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
+	$(MAKE) CPPFLAGS="$(CPPFLAGS)" CXXFLAGS="$(CXXFLAGS)" \
+	        LDFLAGS="$(LDFLAGS)"
 
 build: build-indep build-arch
 
