@@ -1,3 +1,9 @@
+xfstt (1.9-2) UNRELEASED; urgency=low
+
+  * Make init script actions idempotent.
+
+ -- Guillem Jover <guillem@debian.org>  Wed, 20 Jun 2012 08:49:00 +0200
+
 xfstt (1.9-1) unstable; urgency=low
 
   * New upstream release.

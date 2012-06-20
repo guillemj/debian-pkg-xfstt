@@ -57,13 +57,13 @@ set +e
 case "$1" in
     start)
 	log_daemon_msg "Starting $DESC" "$NAME"
-	start-stop-daemon --start --quiet --pidfile $PIDFILE \
+	start-stop-daemon --start --quiet --oknodo --pidfile $PIDFILE \
 	                  --exec $DAEMON -- $ARGS
 	log_end_msg $?
     ;;
     stop)
 	log_daemon_msg "Stopping $DESC" "$NAME"
-	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
+	start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
 	                  --exec $DAEMON
 	log_end_msg $?
     ;;
@@ -74,7 +74,7 @@ case "$1" in
     ;;
     reload|force-reload)
 	log_action_begin_msg "Reloading $DESC configuration"
-	start-stop-daemon --stop --quiet --pidfile $PIDFILE \
+	start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
 	                  --exec $DAEMON --signal HUP
 	log_action_end_msg $?
     ;;
