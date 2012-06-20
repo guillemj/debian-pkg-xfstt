@@ -37,6 +37,7 @@ config.status: configure
 	
 	./configure \
 	  $(conf_gnu_type) \
+	  --disable-silent-rules \
 	  --prefix=/usr \
 	  --localstatedir=/var \
 	  --mandir=\$${prefix}/share/man
