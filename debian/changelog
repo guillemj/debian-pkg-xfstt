@@ -5,6 +5,7 @@ xfstt (1.9-3) UNRELEASED; urgency=medium
     pgp-clean (signing-party) to avoid useless bloat.
   * Remove packaging history from debian/copyright.
   * Now using Standards-Version 3.9.5 (no changes needed).
+  * Switch to debhelper compatibility level 9.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 02 Mar 2014 17:47:33 +0100
 
