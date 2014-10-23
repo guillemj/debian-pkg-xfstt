@@ -2,6 +2,7 @@ xfstt (1.9.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
     - Update upstream site.
+  * Now using Standards-Version 3.9.6 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Thu, 23 Oct 2014 02:39:04 +0200
 
