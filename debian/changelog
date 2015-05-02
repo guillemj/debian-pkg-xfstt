@@ -1,6 +1,7 @@
 xfstt (1.9.1-2) UNRELEASED; urgency=low
 
   * Use https for the copyright Format URL.
+  * Switch Vcs-Browser to a cgit URL.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 02 May 2015 02:10:03 +0200
 
