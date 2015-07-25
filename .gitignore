@@ -1,0 +1,10 @@
+*.tar.xz
+*.tar.xz.asc
+*.tar.gz
+*.tar.gz.asc
+*.diff.gz
+*.dsc
+*.deb
+*.changes
+*.build
+*.upload
