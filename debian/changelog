@@ -3,6 +3,8 @@ xfstt (1.9.2-1) UNRELEASED; urgency=low
   * New upstream release.
   * Use https for the copyright Format URL.
   * Switch Vcs-Browser to a cgit URL.
+  * Move Debian specific LGPL-2.1 filesystem location in debian/copyright
+    to a Comment field.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 02 May 2015 02:10:03 +0200
 
