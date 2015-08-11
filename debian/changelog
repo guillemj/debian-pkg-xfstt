@@ -1,5 +1,6 @@
-xfstt (1.9.1-2) UNRELEASED; urgency=low
+xfstt (1.9.2-1) UNRELEASED; urgency=low
 
+  * New upstream release.
   * Use https for the copyright Format URL.
   * Switch Vcs-Browser to a cgit URL.
 
