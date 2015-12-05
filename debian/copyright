@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://archive.hadrons.org/software/xfstt/
 Upstream-Name: xfstt
 Upstream-Contact: Guillem Jover <guillem@hadrons.org>
-Source: http://archive.hadrons.org/software/xfstt/
 
 Files: *
 Copyright:

@@ -2,9 +2,9 @@ Source: xfstt
 Section: x11
 Priority: extra
 Maintainer: Guillem Jover <guillem@debian.org>
-Homepage: http://www.hadrons.org/software/xfstt/
-Vcs-Browser: http://git.hadrons.org/cgit/debian/pkgs/xfstt.git
-Vcs-Git: git://git.hadrons.org/git/debian/pkgs/xfstt.git
+Homepage: https://www.hadrons.org/software/xfstt/
+Vcs-Browser: https://git.hadrons.org/cgit/debian/pkgs/xfstt.git
+Vcs-Git: https://git.hadrons.org/git/debian/pkgs/xfstt.git
 Build-Depends: debhelper (>= 9), autotools-dev (>= 20120210.1), pkg-config,
  x11proto-fonts-dev
 Standards-Version: 3.9.6
