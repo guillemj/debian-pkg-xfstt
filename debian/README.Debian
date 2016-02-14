@@ -5,8 +5,8 @@ xfstt for Debian
 
   This is a Font Server for X11 which uses True Type fonts, the same
   fonts used by DOS/Windows Systems. These fonts are available just about
-  anywhere, unfortunatly most of them have very weird licences and can not
-  be included here (that may change in the future if some truely free
+  anywhere, unfortunately most of them have very weird licences and can not
+  be included here (that may change in the future if some truly free
   fonts can be found).
 
   xfstt includes an init.d script and starts on its own on startup (but
