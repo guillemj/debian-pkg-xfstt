@@ -4,6 +4,7 @@ xfstt (1.9.3-1) UNRELEASED; urgency=medium
   * Use https for hadrons.org URLs.
   * Rename debian/README.debian to debian/README.Debian.
   * Fix typos in README.Debian.
+  * Now using Standards-Version 3.9.8 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Mon, 23 May 2016 02:08:51 +0200
 
