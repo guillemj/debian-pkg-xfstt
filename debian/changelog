@@ -1,4 +1,4 @@
-xfstt (1.9.3-1) UNRELEASED; urgency=medium
+xfstt (1.9.3-1) unstable; urgency=medium
 
   * New upstream release.
   * Use https for hadrons.org URLs.
@@ -8,7 +8,7 @@ xfstt (1.9.3-1) UNRELEASED; urgency=medium
   * Switch to the dpkg makefile fragments in debian/rules.
   * Enable all hardening features.
 
- -- Guillem Jover <guillem@debian.org>  Mon, 23 May 2016 02:08:51 +0200
+ -- Guillem Jover <guillem@debian.org>  Mon, 23 May 2016 02:10:33 +0200
 
 xfstt (1.9.2-1) unstable; urgency=low
 
