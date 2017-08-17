@@ -31,7 +31,7 @@ debian/po/templates.pot: debian/templates
 
 config.status: configure
 	dh_testdir
-	dh_autotools-dev_updateconfig
+	dh_update_autotools_config
 	
 	./configure \
 	  $(conf_gnu_type) \
@@ -59,7 +59,6 @@ clean:
 	
 	[ ! -f Makefile ] || $(MAKE) clean
 	
-	dh_autotools-dev_restoreconfig
 	dh_clean
 
 .PHONY: clean

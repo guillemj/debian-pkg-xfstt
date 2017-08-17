@@ -3,6 +3,8 @@ xfstt (1.9.3-2) UNRELEASED; urgency=medium
   * Line-wrap dependency fields.
   * Now using Standards-Version 4.0.1 (no changes needed).
   * Switch to debhelper compatibility level 10.
+  * Replace dh_autotools-dev_* commands with dh_update_autotools_config,
+    and remove explicit Build-Depends on autotools-dev.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 18 Aug 2017 01:33:20 +0200
 
