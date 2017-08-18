@@ -3,11 +3,6 @@ set -e
 
 . /usr/share/debconf/confmodule
 
-# Cleanup debconf questions from old versions (1.7-1).
-db_unregister xfstt/default_port_changed || true
-db_unregister xfstt/fonts_not_supplied || true
-db_unregister xfstt/fonts_not_provided || true
-
 if [ -e /etc/default/xfstt ]; then
   . /etc/default/xfstt || true
 

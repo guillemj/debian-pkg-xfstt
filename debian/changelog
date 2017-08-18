@@ -6,6 +6,7 @@ xfstt (1.9.3-2) UNRELEASED; urgency=medium
   * Replace dh_autotools-dev_* commands with dh_update_autotools_config,
     and remove explicit Build-Depends on autotools-dev.
   * Fix indentation for shell code.
+  * Remove ancient debconf unregistrations of deprecated questions.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 18 Aug 2017 01:33:20 +0200
 
