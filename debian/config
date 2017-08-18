@@ -9,14 +9,16 @@ db_unregister xfstt/fonts_not_supplied || true
 db_unregister xfstt/fonts_not_provided || true
 
 if [ -e /etc/default/xfstt ]; then
-	. /etc/default/xfstt || true
+  . /etc/default/xfstt || true
 
-	case "$LISTEN_TCP" in
-	yes)	db_set xfstt/listen_tcp true
-		;;
-	no)	db_set xfstt/listen_tcp false
-		;;
-	esac
+  case "$LISTEN_TCP" in
+  yes)
+    db_set xfstt/listen_tcp true
+    ;;
+  no)
+    db_set xfstt/listen_tcp false
+    ;;
+  esac
 fi
 
 db_input low xfstt/listen_tcp || true

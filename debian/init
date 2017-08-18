@@ -42,13 +42,13 @@ ARGS="$daemon $portarg $userarg"
 test -x "$DAEMON" || exit 0
 
 if [ -e $CONFIGFILE ]; then
-	. $CONFIGFILE
+  . $CONFIGFILE
 else
-	LISTEN_TCP=no
+  LISTEN_TCP=no
 fi
 
 if [ "$LISTEN_TCP" = no ]; then
-	ARGS="$ARGS --notcp"
+  ARGS="$ARGS --notcp"
 fi
 
 . /lib/lsb/init-functions
@@ -56,39 +56,39 @@ fi
 set +e
 
 case "$1" in
-    start)
-	log_daemon_msg "Starting $DESC" "$NAME"
-	mkdir -p $CACHEDIR
-	start-stop-daemon --start --quiet --oknodo --pidfile $PIDFILE \
-	                  --exec $DAEMON -- $ARGS
-	log_end_msg $?
-    ;;
-    stop)
-	log_daemon_msg "Stopping $DESC" "$NAME"
-	start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
-	                  --exec $DAEMON
-	log_end_msg $?
-    ;;
-    restart)
-	log_action_msg "Restarting $DESC"
-	$0 stop
-	$0 start
-    ;;
-    reload|force-reload)
-	log_action_begin_msg "Reloading $DESC configuration"
-	start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
-	                  --exec $DAEMON --signal HUP
-	log_action_end_msg $?
-    ;;
-    status)
-	status_of_proc $DAEMON $NAME
-	exit $?
-	;;
-    *)
-	N=/etc/init.d/$NAME
-	echo "Usage: $N {start|stop|restart|reload|force-reload|status}"
-	exit 1
-    ;;
+start)
+  log_daemon_msg "Starting $DESC" "$NAME"
+  mkdir -p $CACHEDIR
+  start-stop-daemon --start --quiet --oknodo --pidfile $PIDFILE \
+                    --exec $DAEMON -- $ARGS
+  log_end_msg $?
+  ;;
+stop)
+  log_daemon_msg "Stopping $DESC" "$NAME"
+  start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
+                    --exec $DAEMON
+  log_end_msg $?
+  ;;
+restart)
+  log_action_msg "Restarting $DESC"
+  $0 stop
+  $0 start
+  ;;
+reload|force-reload)
+  log_action_begin_msg "Reloading $DESC configuration"
+  start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
+                    --exec $DAEMON --signal HUP
+  log_action_end_msg $?
+  ;;
+status)
+  status_of_proc $DAEMON $NAME
+  exit $?
+  ;;
+*)
+  N=/etc/init.d/$NAME
+  echo "Usage: $N {start|stop|restart|reload|force-reload|status}"
+  exit 1
+  ;;
 esac
 
 exit 0
