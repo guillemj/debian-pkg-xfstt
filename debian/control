@@ -1,6 +1,6 @@
 Source: xfstt
 Section: x11
-Priority: extra
+Priority: optional
 Maintainer: Guillem Jover <guillem@debian.org>
 Homepage: https://www.hadrons.org/software/xfstt/
 Vcs-Browser: https://git.hadrons.org/cgit/debian/pkgs/xfstt.git
