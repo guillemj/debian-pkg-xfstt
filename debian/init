@@ -66,7 +66,7 @@ start)
 stop)
   log_daemon_msg "Stopping $DESC" "$NAME"
   start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE \
-                    --exec $DAEMON
+                    --exec $DAEMON --retry 5
   log_end_msg $?
   ;;
 restart)

@@ -8,6 +8,7 @@ xfstt (1.9.3-2) UNRELEASED; urgency=medium
   * Fix indentation for shell code.
   * Remove ancient debconf unregistrations of deprecated questions.
   * Switch Priority from extra to optional.
+  * Call start-stop-daemon with «--retry 5» on stop action.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 18 Aug 2017 01:33:20 +0200
 
