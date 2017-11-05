@@ -1,6 +1,7 @@
 xfstt (1.9.3-3) UNRELEASED; urgency=medium
 
   * Sort dependency fields.
+  * Set Rules-Requires-Root to no.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 05 Nov 2017 16:51:37 +0100
 
