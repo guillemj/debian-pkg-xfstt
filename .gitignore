@@ -7,4 +7,5 @@
 *.deb
 *.changes
 *.build
+*.buildinfo
 *.upload
