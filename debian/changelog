@@ -3,6 +3,7 @@ xfstt (1.9.3-3) UNRELEASED; urgency=medium
   * Sort dependency fields.
   * Set Rules-Requires-Root to no.
   * Remove --uniform-compression from dpkg-deb call, it is now the default.
+  * Switch to debian/watch format version 4.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 05 Nov 2017 16:51:37 +0100
 
