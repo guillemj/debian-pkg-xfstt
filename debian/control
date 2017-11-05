@@ -14,8 +14,8 @@ Build-Depends:
 Package: xfstt
 Architecture: any
 Depends:
- ${shlibs:Depends},
  ${misc:Depends},
+ ${shlibs:Depends},
  lsb-base,
 Description: X Font Server for TrueType fonts
  TrueType fonts are generally regarded to be the best scalable fonts
