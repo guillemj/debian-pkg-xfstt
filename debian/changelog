@@ -1,4 +1,4 @@
-xfstt (1.9.3-3) UNRELEASED; urgency=medium
+xfstt (1.9.3-3) unstable; urgency=medium
 
   * Sort dependency fields.
   * Set Rules-Requires-Root to no.
@@ -6,7 +6,7 @@ xfstt (1.9.3-3) UNRELEASED; urgency=medium
   * Switch to debian/watch format version 4.
   * Update copyright years.
 
- -- Guillem Jover <guillem@debian.org>  Sun, 05 Nov 2017 16:51:37 +0100
+ -- Guillem Jover <guillem@debian.org>  Sun, 05 Nov 2017 16:54:23 +0100
 
 xfstt (1.9.3-2) unstable; urgency=medium
 
