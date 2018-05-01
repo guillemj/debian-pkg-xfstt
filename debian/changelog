@@ -1,3 +1,10 @@
+xfstt (1.9.3-4) UNRELEASED; urgency=medium
+
+  * Add a primary alternative Build-Depends on xorg-proto-dev for
+    x11proto-fonts-dev.
+
+ -- Guillem Jover <guillem@debian.org>  Wed, 02 May 2018 01:54:57 +0200
+
 xfstt (1.9.3-3) unstable; urgency=medium
 
   * Sort dependency fields.

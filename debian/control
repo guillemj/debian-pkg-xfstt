@@ -10,7 +10,7 @@ Rules-Requires-Root: no
 Build-Depends:
  debhelper (>= 10),
  pkg-config,
- x11proto-fonts-dev,
+ x11proto-dev | x11proto-fonts-dev,
 
 Package: xfstt
 Architecture: any
