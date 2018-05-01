@@ -65,7 +65,7 @@ install-arch: build-arch
 	dh_prep
 	dh_installdirs
 	
-	cp $(CURDIR)/debian/insserv \
+	cp $(CURDIR)/debian/xfstt.insserv \
 	   $(CURDIR)/debian/xfstt/etc/insserv.conf.d/xfstt
 	
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xfstt
