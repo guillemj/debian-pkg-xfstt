@@ -1,5 +1,6 @@
-xfstt (1.9.3-4) UNRELEASED; urgency=medium
+xfstt (1.10-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Add a primary alternative Build-Depends on xorg-proto-dev for
     x11proto-fonts-dev.
   * Remove empty debian/patches/series.
