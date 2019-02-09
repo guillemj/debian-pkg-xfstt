@@ -3,6 +3,7 @@ xfstt (1.9.3-4) UNRELEASED; urgency=medium
   * Add a primary alternative Build-Depends on xorg-proto-dev for
     x11proto-fonts-dev.
   * Remove empty debian/patches/series.
+  * Switch to debhelper compatibility level 11.
 
  -- Guillem Jover <guillem@debian.org>  Wed, 02 May 2018 01:54:57 +0200
 
