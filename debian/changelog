@@ -1,4 +1,4 @@
-xfstt (1.10-1) UNRELEASED; urgency=medium
+xfstt (1.10-1) unstable; urgency=medium
 
   * New upstream release.
   * Add a primary alternative Build-Depends on xorg-proto-dev for
@@ -7,7 +7,7 @@ xfstt (1.10-1) UNRELEASED; urgency=medium
   * Switch to debhelper compatibility level 11.
   * Now using Standards-Version 4.3.0.
 
- -- Guillem Jover <guillem@debian.org>  Wed, 02 May 2018 01:54:57 +0200
+ -- Guillem Jover <guillem@debian.org>  Sat, 09 Feb 2019 17:15:47 +0100
 
 xfstt (1.9.3-3) unstable; urgency=medium
 
