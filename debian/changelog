@@ -3,6 +3,7 @@ xfstt (1.10-1) unstable; urgency=medium
   * New upstream release.
   * Add a primary alternative Build-Depends on xorg-proto-dev for
     x11proto-fonts-dev.
+  * Namespace debhelper fragment files with binary package name.
   * Remove empty debian/patches/series.
   * Switch to debhelper compatibility level 11.
   * Now using Standards-Version 4.3.0.
