@@ -44,12 +44,10 @@ test -x "$DAEMON" || exit 0
 if [ -e $CONFIGFILE ]; then
   . $CONFIGFILE
 else
-  LISTEN_TCP=no
+  OPTIONS="--notcp"
 fi
 
-if [ "$LISTEN_TCP" = no ]; then
-  ARGS="$ARGS --notcp"
-fi
+ARGS="$ARGS $OPTIONS"
 
 . /lib/lsb/init-functions
 

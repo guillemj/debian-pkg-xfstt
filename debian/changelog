@@ -11,6 +11,9 @@ xfstt (1.11-1) UNRELEASED; urgency=medium
   * Stop passing -fomit-frame-pointer, which makes debugging harder.
   * Mention in package description that the font server support is disabled
     in Debian's X.Org server. (Closes: #858512)
+  * Switch from a boolean to free form OPTIONS for LISTEN_TCP setting in
+    /etc/default/xfstt, to make it possible to share it between sysvinit
+    and systemd.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 15 Feb 2019 03:49:44 +0100
 

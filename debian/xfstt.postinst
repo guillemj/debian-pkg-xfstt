@@ -8,25 +8,46 @@ CONFIGFILE=/etc/default/xfstt
 if [ "$1" = configure ]; then
   db_get xfstt/listen_tcp || true
 
-  case "$RET" in
-  true)
-    RET=yes
-    ;;
-  false)
-    RET=no
-    ;;
-  esac
+  LISTEN_TCP="$RET"
 
   if [ -e $CONFIGFILE ]; then
-    sed -e "s/^ *LISTEN_TCP=.*/LISTEN_TCP=\"$RET\"/" \
+    . $CONFIGFILE
+
+    # XXX: Legacy backwards compatibility.
+    if [ "$LISTEN_TCP" = no ]; then
+      LISTEN_TCP=false
+    else
+      LISTEN_TCP=true
+    fi
+
+    case " $OPTIONS " in
+    "* --notcp *")
+      if $LISTEN_TCP; then
+        OPTIONS="$(echo "$OPTIONS" | sed -e 's/--notcp//')"
+      fi
+      ;;
+    *)
+      if ! $LISTEN_TCP; then
+        OPTIONS="$OPTIONS --notcp"
+      fi
+      ;;
+    esac
+
+    sed \
+      -e "s/init\.d script/init scripts/" \
+      -e "/^# *Valid values are:.*$/d" \
+      -e "s/^ *OPTIONS=.*/OPTIONS=\"$OPTIONS\"/" \
+      -e "s/^ *LISTEN_TCP=.*/OPTIONS=\"$OPTIONS\"/" \
       < $CONFIGFILE > $CONFIGFILE.tmp
     mv -f $CONFIGFILE.tmp $CONFIGFILE
   else
+    if ! $LISTEN_TCP; then
+      OPTIONS="--notcp"
+    fi
     (
-      echo "# Defaults for xfstt init.d script"
+      echo "# Defaults for xfstt init scripts"
       echo "#"
-      echo "# Valid values are: yes no"
-      echo "LISTEN_TCP=\"$RET\""
+      echo "OPTIONS=\"$OPTIONS\""
     ) > $CONFIGFILE
   fi
 fi
