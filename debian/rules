@@ -13,7 +13,7 @@ ifneq (,$(filter debug,$(DEB_BUILD_OPTIONS)))
 endif
 
 ifeq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
-	CXXFLAGS += -fomit-frame-pointer -ffast-math
+	CXXFLAGS += -ffast-math
 endif
 
 %:
