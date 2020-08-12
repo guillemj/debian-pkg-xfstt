@@ -7,6 +7,7 @@ xfstt (1.11-1) UNRELEASED; urgency=medium
   * Switch to debhelper compatibility level 13.
   * Switch from debian/compat to debhelper-commpat in Build-Depends.
   * Switch to Standards-Version 4.5.0 (no changes needed).
+  * Switch to dh sequencer.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 15 Feb 2019 03:49:44 +0100
 

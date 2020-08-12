@@ -14,6 +14,8 @@ Build-Depends:
 
 Package: xfstt
 Architecture: any
+Pre-Depends:
+ ${misc:Pre-Depends},
 Depends:
  ${misc:Depends},
  ${shlibs:Depends},
