@@ -4,6 +4,8 @@ xfstt (1.11-1) UNRELEASED; urgency=medium
     - Handle pre-existing .fonts-unix socket directory. (Closes: #962988)
   * Namespace debconf templates file too. It also required renaming the file
     in the debian/po/POTFILES.in file.
+  * Switch to debhelper compatibility level 13.
+  * Switch from debian/compat to debhelper-commpat in Build-Depends.
 
  -- Guillem Jover <guillem@debian.org>  Fri, 15 Feb 2019 03:49:44 +0100
 

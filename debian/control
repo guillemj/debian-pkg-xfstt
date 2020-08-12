@@ -8,7 +8,7 @@ Vcs-Git: https://git.hadrons.org/git/debian/pkgs/xfstt.git
 Standards-Version: 4.3.0
 Rules-Requires-Root: no
 Build-Depends:
- debhelper (>= 11),
+ debhelper-compat (= 13),
  pkg-config,
  x11proto-dev | x11proto-fonts-dev,
 
