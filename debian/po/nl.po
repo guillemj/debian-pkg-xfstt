@@ -6,24 +6,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xfstt\n"
-"Report-Msgid-Bugs-To: guillem@debian.org\n"
-"POT-Creation-Date: 2006-09-15 02:57+0300\n"
+"Report-Msgid-Bugs-To: xfstt@packages.debian.org\n"
+"POT-Creation-Date: 2020-08-09 20:04+0200\n"
 "PO-Revision-Date: 2007-03-06 18:07+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@skolelinux.no>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: boolean
 #. Description
-#: ../templates:1001
+#: ../xfstt.templates:1001
 msgid "Do you want xfstt to listen on a TCP port?"
 msgstr "Wilt u xfstt laten luisteren op een TCP-poort?"
 
 #. Type: boolean
 #. Description
-#: ../templates:1001
+#: ../xfstt.templates:1001
 msgid ""
 "Xfstt runs as superuser, but only before a connection is established with "
 "the client, then it drops superuser privileges and is run as user nobody."
@@ -34,7 +35,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates:1001
+#: ../xfstt.templates:1001
 msgid ""
 "This approach is fairly secure, but if you are not going to provide fonts to "
 "remote hosts, it is recommended to not listen to network connections."
