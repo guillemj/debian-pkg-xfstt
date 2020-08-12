@@ -1,5 +1,7 @@
-xfstt (1.10-2) UNRELEASED; urgency=medium
+xfstt (1.11-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
+    - Handle pre-existing .fonts-unix socket directory. (Closes: #962988)
   * Namespace debconf templates file too. It also required renaming the file
     in the debian/po/POTFILES.in file.
 
