@@ -1,0 +1,17 @@
+[Unit]
+Documentation=man:xfstt(1x)
+Description=X11 Font Server for TryeType fonts
+Before=graphical.target
+After=network.target
+After=remote-fs.target
+Wants=network.target
+
+[Service]
+Type=simple
+CacheDirectory=xfstt
+EnvironmentFile=/etc/default/xfstt
+ExecStart=/usr/bin/xfstt $OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
